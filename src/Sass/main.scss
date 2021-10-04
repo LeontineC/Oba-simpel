@@ -1,0 +1,15 @@
+@import 'abstracts/_functions';
+@import 'abstracts/_mixins';
+@import 'abstracts/_variables';
+@import 'base/_reset';
+@import 'base/_typography';
+@import 'components/_navbar';
+@import 'components/_header';
+@import 'components/footer';
+@import 'modules/buttons';
+@import 'modules/carousel';
+@import 'modules/slider';
+@import 'pages/home';
+@import 'pages/boeken';
+@import 'pages/activiteiten';
+@import 'pages/details';

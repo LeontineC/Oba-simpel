@@ -1,0 +1,24 @@
+{
+    "version": 3,
+    "mappings": "AKAA,AAAA,IAAI,CAAC;EACD,KAAK,EAAE,MAAM;CAChB",
+    "sources": [
+        "main.scss",
+        "abstracts/_functions.scss",
+        "abstracts/_mixins.scss",
+        "abstracts/_variables.scss",
+        "base/_reset.scss",
+        "base/_typography.scss",
+        "components/_navbar.scss",
+        "components/_header.scss",
+        "components/_footer.scss",
+        "modules/_buttons.scss",
+        "modules/_carousel.scss",
+        "modules/_slider.scss",
+        "pages/_home.scss",
+        "pages/_boeken.scss",
+        "pages/_activiteiten.scss",
+        "pages/_details.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

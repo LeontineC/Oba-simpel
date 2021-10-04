@@ -1,8 +1,9 @@
 import React from 'react'
+import './Sass/main.css'
 
 const App = () => {
   return (
-    <div>
+    <div> Hello OBA!
       
     </div>
   )
