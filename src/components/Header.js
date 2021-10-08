@@ -1,7 +1,6 @@
 const Header = () => {
     return (
         <div>
-            Hola mundo!
         </div>
     )
 }

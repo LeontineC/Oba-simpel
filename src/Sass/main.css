@@ -1,4 +1,49 @@
 body {
   color: purple;
 }
+
+.book_row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  width: 40vw;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: fixed;
+}
+
+.book_row div {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.book_row div img {
+  height: 250px;
+}
+
+.modal {
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #FFF;
+  padding: 50px;
+  z-index: 1000;
+  height: 70vh;
+  width: 50vw;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
 /*# sourceMappingURL=main.css.map */
