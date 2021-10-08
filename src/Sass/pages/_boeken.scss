@@ -1,0 +1,18 @@
+.book_row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 40vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position:fixed;
+
+
+    div {
+        justify-self: center;
+
+        img {
+            height: 250px;
+        }
+    }
+}

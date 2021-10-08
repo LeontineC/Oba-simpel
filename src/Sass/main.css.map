@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AKAA,AAAA,IAAI,CAAC;EACD,KAAK,EAAE,MAAM;CAChB",
+    "mappings": "AKAA,AAAA,IAAI,CAAC;EACD,KAAK,EAAE,MAAM;CAChB;;AQFD,AAAA,SAAS,CAAC;EACN,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,WAAW;EAClC,KAAK,EAAE,IAAI;EACX,GAAG,EAAE,GAAG;EACR,IAAI,EAAE,GAAG;EACT,SAAS,EAAE,qBAAqB;EAChC,QAAQ,EAAC,KAAK;CAUjB;;AAjBD,AAUI,SAVK,CAUL,GAAG,CAAC;EACA,YAAY,EAAE,MAAM;CAKvB;;AAhBL,AAaQ,SAbC,CAUL,GAAG,CAGC,GAAG,CAAC;EACA,MAAM,EAAE,KAAK;CAChB;;AGfT,AAAA,MAAM,CAAC;EACH,QAAQ,EAAE,KAAK;EACf,GAAG,EAAE,GAAG;EACR,IAAI,EAAE,GAAG;EACT,SAAS,EAAE,qBAAqB;EAChC,gBAAgB,EAAE,IAAI;EACtB,OAAO,EAAE,IAAI;EACb,OAAO,EAAE,IAAI;EACb,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;CACd;;AAED,AAAA,QAAQ,CAAC;EACL,QAAQ,EAAE,KAAK;EACf,GAAG,EAAE,CAAC;EACN,IAAI,EAAE,CAAC;EACP,KAAK,EAAC,CAAC;EACP,MAAM,EAAE,CAAC;EACT,gBAAgB,EAAE,kBAAkB;EACpC,OAAO,EAAE,IAAI;CAChB",
     "sources": [
         "main.scss",
         "abstracts/_functions.scss",
@@ -17,7 +17,8 @@
         "pages/_home.scss",
         "pages/_boeken.scss",
         "pages/_activiteiten.scss",
-        "pages/_details.scss"
+        "pages/_details.scss",
+        "components/_bookDetails.scss"
     ],
     "names": [],
     "file": "main.css"
