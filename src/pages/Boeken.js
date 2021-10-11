@@ -6,7 +6,7 @@ const Boeken = () => {
     const [booksList, setBooksList] = useState()
 
     useEffect(() => {
-        fetch("https://techgrounds-oba.herokuapp.com/api/oba/techgrounds/boeken/zoon")
+        fetch("https://techgrounds-oba.herokuapp.com/api/oba/techgrounds/boeken/natuur")
             .then(response => response.json())
             .then(results => setBooksList(results.boeken))
     }, [])
@@ -23,7 +23,7 @@ const Boeken = () => {
         <div className="result_card">
             {booksList.map(({title, omslagafbeeldingen}) => (
                 <article onclick={() => console.log('clicked')}>
-                <h3>{title}</h3>
+                <h3>{title.substring(0, 60)}</h3>
                 <button onClick={() => setIsOpen(true)}> <img src={omslagafbeeldingen[1]} alt={"cover picture of " + title}/> </button>
                 <BookDetails open={isOpen} onClose={() => setIsOpen(false)}>
                 </BookDetails>
