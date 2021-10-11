@@ -14,8 +14,6 @@ const App = () => {
     <div> 
    <FontProvider>
     <Navbar />
-    
-   
     <Header />
    </FontProvider>
     <Boeken />

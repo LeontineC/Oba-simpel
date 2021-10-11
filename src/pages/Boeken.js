@@ -3,37 +3,36 @@ import { useEffect, useState } from "react"
 
 const Boeken = () => {
     const [isOpen, setIsOpen] = useState(false)
+    const [booksList, setBooksList] = useState()
 
     useEffect(() => {
-        fetch("https://techgrounds-oba.herokuapp.com/api/oba/techgrounds/boeken/carmen-of-the-rings")
+        fetch("https://techgrounds-oba.herokuapp.com/api/oba/techgrounds/boeken/zoon")
             .then(response => response.json())
-            .then(results => console.log(results.boeken))
+            .then(results => setBooksList(results.boeken))
     }, [])
 
+    if (!booksList) return null
+
+    console.log(booksList)
+    console.log(booksList[0].title)
+    
+
     return (
-        <div className="book_row">
-            <div onclick={() => console.log('clicked')}>
-                <button onClick={() => setIsOpen(true)}> <img src="https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=40808443X&isbn=9789029091848&lid=&aut=&ti=&size=120" alt="Honderd jaar eenzaamheid : roman / Gabriel García Márquez" /> </button>
-
+        <>
+        <section className="search_results">
+        <div className="result_card">
+            {booksList.map(({title, omslagafbeeldingen}) => (
+                <article onclick={() => console.log('clicked')}>
+                <h3>{title}</h3>
+                <button onClick={() => setIsOpen(true)}> <img src={omslagafbeeldingen[1]} alt={"cover picture of " + title}/> </button>
                 <BookDetails open={isOpen} onClose={() => setIsOpen(false)}>
                 </BookDetails>
-            </div>
-
-            <div onclick={() => console.log('clicked')}>
-                <button onClick={() => setIsOpen(true)}> <img src="https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=83107034X&isbn=9789028204065&lid=&aut=&ti=&size=120" alt="The idiot / Fyodor Dostoevsky" /> </button>
-
-                <BookDetails open={isOpen} onClose={() => setIsOpen(false)}>
-                </BookDetails>
-            </div>
-
-            <div onclick={() => console.log('clicked')}>
-                <button onClick={() => setIsOpen(true)}> <img src="https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=325814244&isbn=9789044517163&lid=&aut=&ti=&size=120" alt="De vos was de jager / Herta Müller" /> </button>
-
-                <BookDetails open={isOpen} onClose={() => setIsOpen(false)}>
-                </BookDetails>
-            </div>
-
+            </article>
+            ))}
         </div>
+        </section>
+        </>
+
     )
 }
 
