@@ -1,39 +1,37 @@
-import BookDetails from "../components/BookDetails"
 import { useEffect, useState } from "react"
+import Book from "../components/Book"
 
 const Boeken = () => {
-    const [isOpen, setIsOpen] = useState(false)
     const [booksList, setBooksList] = useState()
 
     useEffect(() => {
-        fetch("https://techgrounds-oba.herokuapp.com/api/oba/techgrounds/boeken/natuur")
+        fetch("https://techgrounds-oba.herokuapp.com/api/oba/techgrounds/boeken/cat")
             .then(response => response.json())
             .then(results => setBooksList(results.boeken))
     }, [])
 
     if (!booksList) return null
 
-    console.log(booksList)
-    console.log(booksList[0].title)
     
-
-    return (
-        <>
+return (
+    <>
         <section className="search_results">
-        <div className="result_card">
-            {booksList.map(({title, omslagafbeeldingen}) => (
-                <article onclick={() => console.log('clicked')}>
-                <h3>{title.substring(0, 60)}</h3>
-                <button onClick={() => setIsOpen(true)}> <img src={omslagafbeeldingen[1]} alt={"cover picture of " + title}/> </button>
-                <BookDetails open={isOpen} onClose={() => setIsOpen(false)}>
-                </BookDetails>
-            </article>
-            ))}
-        </div>
+            <div className="result_card">
+                {booksList.map(({id, title, omslagafbeeldingen, auteurs, uitgever, taal, series, beschrijving }) => (
+                    <Book key={id}
+                    title={title} 
+                    omslagafbeeldingen={omslagafbeeldingen[1]} 
+                    author={auteurs}
+                    publisher={uitgever}
+                    language={taal}
+                    series={series}
+                    description={beschrijving}
+                    />)
+                )}
+            </div>
         </section>
-        </>
-
-    )
-}
+    </>
+)
+                }
 
 export default Boeken
