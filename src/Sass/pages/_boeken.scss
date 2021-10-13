@@ -12,6 +12,7 @@
     article {
         padding: 2vw;
         box-shadow: $box_shadow_first;
+        min-width: 200px;
     }
 
     h3 {
@@ -34,6 +35,7 @@
             object-fit: cover;
             padding:0;
             margin:0 auto;
+            min-width:100px;
         }
         
     }
