@@ -17,18 +17,19 @@ const BookDetails = ({ open, children, onClose, title, author, omslagafbeeldinge
         onClick={onClose} 
         ><FaWindowClose class="icon"/>Sluiten </button>
             {children}
-            <h3>{title} bij {author.slice(author.indexOf(',')+1, author.length)} {author.slice(0, author.indexOf(','))}</h3>
+            <h3>{title}</h3>
+            <h5>{author.slice(author.indexOf(',')+1, author.length)} {author.slice(0, author.indexOf(','))}</h5>
             <div className="modal_display">
             <div className="modal_image">
             <img src={omslagafbeeldingen} alt={"cover picture of " + title} />
             </div>
             <div className="modal_details">
-            <p>Titel: {title}</p>
-            <p>Auteur: {author}</p>
-            <p>Uitgever: {publisher}</p>
-            <p>Taal: {language}</p>
-            <p>Reeks: {series}</p>
-            <p>Beschrijving: {description}</p>
+            <p> <span>Titel: </span>{title}</p>
+            <p><span>Auteur: </span>{author}</p>
+            <p><span>Uitgever: </span>{publisher}</p>
+            <p><span>Taal: </span>{language}</p>
+            <p><span>Reeks: </span>{series}</p>
+            <p><span>Beschrijving: </span>{description}</p>
             </div>
         </div>
         </div>

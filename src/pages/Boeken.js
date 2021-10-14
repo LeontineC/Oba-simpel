@@ -5,7 +5,7 @@ const Boeken = () => {
     const [booksList, setBooksList] = useState()
 
     useEffect(() => {
-        fetch("https://techgrounds-oba.herokuapp.com/api/oba/techgrounds/boeken/cat")
+        fetch("https://techgrounds-oba.herokuapp.com/api/oba/techgrounds/boeken/beer")
             .then(response => response.json())
             .then(results => setBooksList(results.boeken))
     }, [])
