@@ -7,12 +7,12 @@ const Boeken = () => {
     useEffect(() => {
         fetch("https://techgrounds-oba.herokuapp.com/api/oba/techgrounds/boeken/beer")
             .then(response => response.json())
-            .then(results => setBooksList(results.boeken))
+            .then(results => setBooksList(results.book.boeken))
     }, [])
 
     if (!booksList) return null
 
-    
+    console.log(booksList)
 return (
     <>
         <section className="search_results">
