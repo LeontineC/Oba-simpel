@@ -14,10 +14,10 @@ const Home = () => {
 
   return (
     <div>
-      <Slider genre="audiobook" />
-      <hr />
-      <Slider genre="largetype" />
-      <hr />
+      <Slider />
+      
+      {/* <Slider genre="largetype" /> */}
+      
       {/* <Slider genre="e" /> */}
     </div>
   );
