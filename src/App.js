@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import Header from './components/Header'
 import Navbar from './components/Navbar'
-import Boeken from './pages/Boeken'
+import SearchResultsBooks from './pages/SearchResultsBooks'
 import './Sass/main.css'
 import { FontProvider } from './components/FontContext'
 
@@ -16,7 +16,7 @@ const App = () => {
     <Navbar />
     <Header />
    </FontProvider>
-    <Boeken />
+    <SearchResultsBooks />
       
     </div>
   );
