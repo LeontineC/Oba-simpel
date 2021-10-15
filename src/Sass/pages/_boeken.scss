@@ -1,0 +1,42 @@
+.search_results {
+    margin: 5vh auto;
+}
+
+.result_card {
+    display: flex;
+    flex-wrap:wrap;
+    max-width: 100vw;
+    justify-content: center;
+    gap: 5vw;
+
+    article {
+        padding: 2vw;
+        box-shadow: $box_shadow_first;
+        min-width: 200px;
+    }
+
+    h3 {
+        width: 20vw;
+        text-align: center;
+        height: 8vh;
+        color:$primary-color;
+        margin-top:0;
+    }
+
+    button {
+        display: block;
+        margin: 0 auto;
+        border: none;
+        
+
+        img {
+            width: 10vw;
+            height: 30vh;
+            object-fit: cover;
+            padding:0;
+            margin:0 auto;
+            min-width:100px;
+        }
+        
+    }
+}
