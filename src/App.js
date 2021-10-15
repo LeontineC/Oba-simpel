@@ -7,7 +7,7 @@ import Home from './pages/Home'
 import React, {useState} from 'react'
 import Header from './components/Header'
 import Navbar from './components/Navbar'
-import Boeken from './pages/Boeken'
+import SearchResultsBooks from './pages/SearchResultsBooks'
 import './Sass/main.css'
 import { FontProvider } from './components/FontContext'
 >>>>>>> 474a653fd8c165ce2b56f9bf2be62ee792360cfa
@@ -27,7 +27,7 @@ const App = () => {
     <Navbar />
     <Header />
    </FontProvider>
-    <Boeken />
+    <SearchResultsBooks />
       
 >>>>>>> 474a653fd8c165ce2b56f9bf2be62ee792360cfa
     </div>
