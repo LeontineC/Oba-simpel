@@ -9,27 +9,31 @@ const Slider = ({ data }) => {
 
   const length = data.length;
   console.log(length);
-  // console.log(data[0].title)
 
   const currentIndex = (current) => {
-  if (current > (length - 1)) {
-    return null;
-  }
-  
-  return [
-    current,
-    (current + 1) % length,
-    (current + 2) % length,
-    (current + 3) % length,
+    if (current > length - 1) {
+      return null;
+    }
 
-  ];
-}; 
+    return [
+      current,
+      (current + 1) % length,
+      (current + 2) % length,
+      (current + 3) % length,
+    ];
+  }; 
+   
+  /*const nextSlide = () => {
+    //if length-1 this is last slide so returns to 0= first slide continuous loop
+    setCurrent(prevState => {
+      if (prevState === length - 1) return 0
+      return prevState + 1
+    });  */
 
   const nextSlide = () => {
     //if length-1 this is last slide so returns to 0= first slide continuous loop
     setCurrent(current === length - 1 ? 0 : current + 1); //else current + next in array
-  };
-  
+  }; 
 
   const prevSlide = () => {
     //if current is first slide count backwards in array from first
@@ -52,12 +56,11 @@ const Slider = ({ data }) => {
           <ArrowRightIcon style={{ fontSize: "200px" }} onClick={nextSlide} />
         </button>
 
-
-        <div className="sliderContainer">
+        
           {data.map((slide, index) => {
             return (
               <div
-                className={index === current ? "slide active" : "slide"}
+                className={index === current ? "slide active"  : "slide"}
                 key={index}
               >
                 {index === current && (
@@ -67,49 +70,14 @@ const Slider = ({ data }) => {
                     className="sliderImage"
                   />
                 )}
-                {slide.title}
+               
               </div>
             );
           })}
-        </div>
+       
       </section>
     </>
   );
 };
-/* import React, {useState} from 'react';
-import ArrowLeftIcon from "@material-ui/icons/ArrowLeft";
-import ArrowRightIcon from "@material-ui/icons/ArrowRight";
 
-const Slider = ({data}) => {
- const [current, setCurrent] = useState();
-
-  
-  if (data.length > 10) data.length = 10;
-
- const length = data.length
- console.log(length)
-console.log(data[0].title)
-
-  return (
-    <>
-     <section className="slider">
-        <button className="arrowBtnLeft">
-          <ArrowLeftIcon style={{ fontSize: "200px" }}  />
-        </button>
-        <button className="arrowBtnRight">
-          <ArrowRightIcon style={{ fontSize: "200px" }} />
-        </button>
-
-       
-
-        {data.map(({ title, omslagafbeeldingen }) => (
-          <div className="sliderContainer">
-            <img src={omslagafbeeldingen[1]} alt="" className="sliderImage" />
-            {title}
-          </div>
-        ))} 
-      </section>
-    </>
-  )
-}*/
 export default Slider;

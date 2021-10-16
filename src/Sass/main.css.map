@@ -1,1 +1,24 @@
-{"version":3,"sourceRoot":"","sources":["base/_typography.scss","modules/_slider.scss"],"names":[],"mappings":"AAAA;EACI;;;ACCJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAKJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGJ;EACI;EACA;EACA;EACA;;;AAGJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGJ;EACI;;;AAGJ;EACI","file":"main.css"}
+{
+    "version": 3,
+    "mappings": "AKAA,AAAA,IAAI,CAAC;EACD,KAAK,EAAE,MAAM;CAChB;;AMFD,AAAA,OAAO,CAAC;EACJ,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;CACtB;;AAED,AAAA,YAAY,CAAC;EACT,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,IAAI;EAClB,MAAM,EAAE,cAAc;EACtB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,WAAW;EAC5B,gBAAgB,EAAE,KAAK;CAC1B;;AAED,AAAA,aAAa,CAAC;EACV,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,GAAG;EACR,IAAI,EAAE,GAAG;EACT,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,EAAE;EACX,MAAM,EAAE,OAAO;EACf,WAAW,EAAE,IAAI;EACjB,MAAM,EAAE,IAAI;EACZ,UAAU,EAAE,WAAW;CAC1B;;AAED,AAAA,cAAc,CAAC;EACX,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,GAAG;EACR,KAAK,EAAE,GAAG;EACV,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,EAAE;EACX,MAAM,EAAE,OAAO;EACf,WAAW,EAAE,IAAI;EACjB,MAAM,EAAE,IAAI;EACZ,UAAU,EAAE,WAAW;CAC1B",
+    "sources": [
+        "main.scss",
+        "abstracts/_functions.scss",
+        "abstracts/_mixins.scss",
+        "abstracts/_variables.scss",
+        "base/_reset.scss",
+        "base/_typography.scss",
+        "components/_navbar.scss",
+        "components/_header.scss",
+        "components/_footer.scss",
+        "modules/_buttons.scss",
+        "modules/_carousel.scss",
+        "modules/_slider.scss",
+        "pages/_home.scss",
+        "pages/_boeken.scss",
+        "pages/_activiteiten.scss",
+        "pages/_details.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
