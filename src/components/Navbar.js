@@ -6,6 +6,7 @@ import TextFieldsIcon from "@material-ui/icons/TextFields";
 import LanguageIcon from "@material-ui/icons/Language";
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 import { ImBooks } from "react-icons/im";
+import { NavLink } from "react-router-dom"
 
 const Navbar = () => {
   const [fontSize, setFontSize] = useContext(FontContext);
