@@ -6,11 +6,11 @@ import TextFieldsIcon from "@material-ui/icons/TextFields";
 import LanguageIcon from "@material-ui/icons/Language";
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 import { ImBooks } from "react-icons/im";
-import { NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [fontSize, setFontSize] = useContext(FontContext);
-
+ 
   return (
     <>
       <nav className="navbar">
@@ -18,16 +18,22 @@ const Navbar = () => {
           <ul className="listLeft">
             <li>logo</li>
             <li className="startNav" style={{ color: "teal" }}>
-              <HomeIcon style={{ color: "teal", fontSize: "5vw" }} />
-              Start
+              <NavLink to="/" className="navLink">
+                <HomeIcon style={{ color: "teal", fontSize: "5vw" }} />
+                Start
+              </NavLink>
             </li>
             <li className="activiteitenNav" style={{ color: "teal" }}>
-              <EventIcon style={{ color: "teal", fontSize: "5vw" }} />
-              Activiteiten
+              <NavLink to="/activiteiten" className="navLink">
+                <EventIcon style={{ color: "teal", fontSize: "5vw" }} />
+                Activiteiten
+              </NavLink>
             </li>
             <li className="boekenNav" style={{ color: "teal" }}>
-              <ImBooks style={{ fontSize: "5vw" }} />
-              Boeken
+              <NavLink to="/boeken" className="navLink">
+                <ImBooks style={{ fontSize: "5vw" }} />
+                Boeken
+              </NavLink>
             </li>
           </ul>
         </section>
