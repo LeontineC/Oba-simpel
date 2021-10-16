@@ -21,23 +21,20 @@ const Slider = ({ data }) => {
       (current + 2) % length,
       (current + 3) % length,
     ];
-  }; 
-   
-  /*const nextSlide = () => {
-    //if length-1 this is last slide so returns to 0= first slide continuous loop
-    setCurrent(prevState => {
-      if (prevState === length - 1) return 0
-      return prevState + 1
-    });  */
+  };
 
   const nextSlide = () => {
-    //if length-1 this is last slide so returns to 0= first slide continuous loop
-    setCurrent(current === length - 1 ? 0 : current + 1); //else current + next in array
-  }; 
+    setCurrent((prevState) => {
+      if (prevState === length - 1) return 0;
+      return prevState + 1;
+    });
+  };
 
   const prevSlide = () => {
-    //if current is first slide count backwards in array from first
-    setCurrent(current === 0 ? length - 1 : current - 1); //else count backwards from slide your on now
+    setCurrent((prevState) => {
+      if (prevState === 0) return length - 1;
+      return prevState - 1;
+    });
   };
 
   console.log(current);
@@ -56,25 +53,22 @@ const Slider = ({ data }) => {
           <ArrowRightIcon style={{ fontSize: "200px" }} onClick={nextSlide} />
         </button>
 
-        
-          {data.map((slide, index) => {
-            return (
-              <div
-                className={index === current ? "slide active"  : "slide"}
-                key={index}
-              >
-                {index === current && (
-                  <img
-                    src={slide.omslagafbeeldingen[1]}
-                    alt=""
-                    className="sliderImage"
-                  />
-                )}
-               
-              </div>
-            );
-          })}
-       
+        {data.map((slide, index) => {
+          return (
+            <div
+              className={index === current ? "slide active" : "slide"}
+              key={index}
+            >
+              {index === current && (
+                <img
+                  src={slide.omslagafbeeldingen[1]}
+                  alt=""
+                  className="sliderImage"
+                />
+              )}
+            </div>
+          );
+        })}
       </section>
     </>
   );
