@@ -4,7 +4,6 @@
     align-items: center;
     position: fixed;
     width: 100vw;
-    // height: 30vh;
     top: 0;
     left: 0;
     right: 0;
@@ -43,6 +42,7 @@
     width: 35%;
     padding: 1vw;
     margin-top: 2vw;
+    margin-right: 5vw;
     ul {
         display: flex;
         li {
@@ -58,14 +58,17 @@
                 align-items: center;
                 font-size: 1.5vw;
             }
-            a{
+           a{
                 text-decoration: none;
                 display: flex;
                 flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
                 color: teal;
                 font-size: 1.5vw;
                 margin-left: 2vw;
-            }
+            } 
         }   
     }
 }
