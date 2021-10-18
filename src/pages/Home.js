@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Slider from "../components/Slider";
+import { ImBooks } from "react-icons/im";
 
 const Home = () => {
   const [sliderData, setSliderData] = useState();
+  
 
   useEffect(() => {
     fetch(`https://techgrounds-oba.herokuapp.com/api/oba/techgrounds/boeken/`)
@@ -15,16 +17,25 @@ const Home = () => {
 
   if (!sliderData) return null;
 
-  
-
-console.log(sliderData.largetype.boeken)
+  console.log(sliderData.largetype.boeken);
 
   return (
-    <div>
-      <Slider  data={sliderData.largetype.boeken} />
-      <Slider data={sliderData.audio.boeken} />
-      <Slider data={sliderData.book.boeken} />
-    </div>
+    <>
+      <div className="Home">
+        <h2>
+          <ImBooks/> Grootletter boeken
+        </h2>
+        <Slider data={sliderData.largetype.boeken} />
+        <h2>
+          <ImBooks/> Audio boeken
+        </h2>
+        <Slider data={sliderData.audio.boeken} />
+        <h2>
+          <ImBooks/> Boeken
+        </h2>
+        <Slider data={sliderData.book.boeken} />
+      </div>
+    </>
   );
 };
 

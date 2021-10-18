@@ -8,7 +8,7 @@ const Slider = ({ data }) => {
   if (data.length > 10) data.length = 10;
 
   const length = data.length;
-  console.log(length);
+  
 
   const currentIndex = (current) => {
     if (current > length - 1) {
@@ -20,6 +20,9 @@ const Slider = ({ data }) => {
       (current + 1) % length,
       (current + 2) % length,
       (current + 3) % length,
+      (current + 4) % length,
+      (current + 5) % length,
+      
     ];
   };
 
@@ -38,6 +41,7 @@ const Slider = ({ data }) => {
   };
 
   console.log(current);
+  console.log(currentIndex(current));
 
   if (!Array.isArray(data) || data.length <= 0) {
     return null; //in case no array or no slides
@@ -52,23 +56,27 @@ const Slider = ({ data }) => {
         <button className="arrowBtnRight">
           <ArrowRightIcon style={{ fontSize: "200px" }} onClick={nextSlide} />
         </button>
-
-        {data.map((slide, index) => {
+    <div className="wrapper">
+        {currentIndex(current).map((index, position) => {
+          const slide = data[index]
           return (
             <div
               className={index === current ? "slide active" : "slide"}
               key={index}
+              style={{transform: `translateX(${(position -1) * 100}%)` }}
             >
-              {index === current && (
+              {/* {currentIndex(current).includes(index) && ( */}
+            
                 <img
                   src={slide.omslagafbeeldingen[1]}
                   alt=""
                   className="sliderImage"
                 />
-              )}
+              
             </div>
           );
         })}
+        </div>
       </section>
     </>
   );

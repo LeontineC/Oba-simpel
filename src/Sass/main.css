@@ -4,8 +4,8 @@ body {
 
 .slider {
   position: relative;
-  height: 100vh;
-  width: 100%;
+  height: 70vh;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,13 +15,36 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  left: 0;
+  -webkit-transition: -webkit-transform .5s linear;
+  transition: -webkit-transform .5s linear;
+  transition: transform .5s linear;
+  transition: transform .5s linear, -webkit-transform .5s linear;
 }
 
 .sliderImage {
   width: 15vw;
   height: 50vh;
-  margin-left: 20vw;
-  margin-right: 20vw;
+  margin-right: 1.5vw;
   border: solid 4px teal;
   padding: 20px;
   background-clip: content-box;
@@ -31,7 +54,7 @@ body {
 .arrowBtnLeft {
   position: absolute;
   top: 30%;
-  left: 5px;
+  left: -15%;
   color: teal;
   z-index: 10;
   cursor: pointer;
@@ -46,7 +69,7 @@ body {
 .arrowBtnRight {
   position: absolute;
   top: 30%;
-  right: 5px;
+  right: -15%;
   color: teal;
   z-index: 10;
   cursor: pointer;
@@ -56,5 +79,11 @@ body {
           user-select: none;
   border: none;
   background: transparent;
+}
+
+h2 {
+  margin-bottom: 0;
+  margin-left: 12vw;
+  color: teal;
 }
 /*# sourceMappingURL=main.css.map */
