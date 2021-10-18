@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import React, { useState} from 'react';
-=======
 import React, { useState } from 'react';
->>>>>>> navbar
 
 export const FontContext = React.createContext({});
 
@@ -16,9 +12,3 @@ return (
     {props.children}</FontContext.Provider>
 )
 };
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> navbar
