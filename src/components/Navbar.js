@@ -10,6 +10,7 @@ import { RiMenu5Fill } from "react-icons/ri";
 import { RiCloseLine } from "react-icons/ri";
 import { NavLink } from "react-router-dom";
 
+
 const Navbar = () => {
   const [fontSize, setFontSize] = useContext(FontContext);
   const [showMenu, setShowMenu] = useState(false);
@@ -20,7 +21,7 @@ const Navbar = () => {
     <>
       <nav className="navbar">
         <section className="left">
-          <img src="" alt="logo" className="logo" />
+         <img src="images/ObaLogo.svg" alt="logo" className="logo" />
           <ul className="listLeft list" className={showMenu ? "hidden" : ""}>
             <li className="startNav" style={{ color: "teal" }}>
               <NavLink
