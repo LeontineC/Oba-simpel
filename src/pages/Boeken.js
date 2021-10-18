@@ -6,7 +6,7 @@ const Boeken = () => {
 
     return (
         <div>
-            <p style={{fontSize:`${fontSize}px`}}> Boeken!</p>
+            <p style={{marginTop:"30vw", fontSize:`${fontSize}px`}}> Boeken!</p>
         </div>
     )
 }

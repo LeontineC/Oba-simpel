@@ -6,7 +6,7 @@ const Home = () => {
 
     return (
         <div>
-            <p style={{fontSize:`${fontSize}px`}}> Home!</p>
+            <p style={{marginTop:"30vw", fontSize:`${fontSize}px`}}> Home!</p>
         </div>
     )
 }

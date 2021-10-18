@@ -6,7 +6,7 @@ const Activiteiten = () => {
 
     return (
         <div>
-           <p style={{fontSize:`${fontSize}px`}}> Activiteiten!</p>
+           <p style={{marginTop:"30vw", fontSize:`${fontSize}px`}}> Activiteiten!</p>
         </div>
     )
 }
