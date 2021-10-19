@@ -8,7 +8,6 @@ const Slider = ({ data }) => {
   if (data.length > 10) data.length = 10;
 
   const length = data.length;
-  
 
   const currentIndex = (current) => {
     if (current > length - 1) {
@@ -22,7 +21,8 @@ const Slider = ({ data }) => {
       (current + 3) % length,
       (current + 4) % length,
       (current + 5) % length,
-      
+      (current + 6) % length,
+      (current + 7) % length,
     ];
   };
 
@@ -56,26 +56,24 @@ const Slider = ({ data }) => {
         <button className="arrowBtnRight">
           <ArrowRightIcon style={{ fontSize: "200px" }} onClick={nextSlide} />
         </button>
-    <div className="wrapper">
-        {currentIndex(current).map((index, position) => {
-          const slide = data[index]
-          return (
-            <div
-              className={index === current ? "slide active" : "slide"}
-              key={index}
-              style={{transform: `translateX(${(position -1) * 100}%)` }}
-            >
-              {/* {currentIndex(current).includes(index) && ( */}
-            
+        <div className="wrapper">
+          {currentIndex(current).map((index, position) => {
+            const slide = data[index];
+            return (
+              <div
+                className={index === current ? "slide active" : "slide"}
+                key={index}
+                style={{ transform: `translateX(${(position - 1) * 100}%)` }}
+              >
                 <img
                   src={slide.omslagafbeeldingen[1]}
                   alt=""
                   className="sliderImage"
                 />
-              
-            </div>
-          );
-        })}
+                <h3 className="titleSlide">{slide.title}</h3>
+              </div>
+            );
+          })}
         </div>
       </section>
     </>
