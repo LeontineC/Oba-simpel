@@ -4,7 +4,6 @@ import Navbar from "./components/Navbar";
 import { FontProvider } from "./components/FontContext";
 import "./Sass/main.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-// import SearchResultsBooks from './pages/SearchResultsBooks'
 import SearchResultsBooks from './pages/SearchResultsBooks'
 import Activiteiten from "./pages/Activiteiten";
 import Boeken from "./pages/Boeken";
