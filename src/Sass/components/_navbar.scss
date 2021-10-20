@@ -1,0 +1,100 @@
+.navbar {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    // height: 30vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    color: teal;
+    background-color: white;
+}
+
+.logo {
+   width: 6vw;
+   margin-left: 1vw;
+}
+
+.left {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 65%;
+    // border: solid lime 2px;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+            list-style-type: none;
+            font-size: 3vw;
+        }
+    }
+}
+
+.right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+    padding: 1vw;
+    margin-top: 2vw;
+    // border: solid fuchsia 1px;
+   
+    ul {
+        display: flex;
+        li {
+            list-style-type: none;
+            
+            button {
+                outline: none;
+                border: none;
+                background: transparent;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.5vw;
+            }
+            a{
+                text-decoration: none;
+                display: flex;
+                flex-wrap: wrap;
+                color: teal;
+                font-size: 1.5vw;
+                margin-left: 2vw;
+            }
+        }   
+    }
+}
+
+.navLink {
+    color: teal;
+    margin: 1vw;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;  
+}
+
+.navLink:hover{
+    color: gray;
+}   
+
+.active {
+    color: gray;
+}
+
+.btnsRight {
+    color: teal;
+}
+
+.menuBtn {
+    display: none;
+    outline: none;
+}
+
+
+
