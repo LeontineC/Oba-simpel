@@ -3,6 +3,7 @@ import Slider from "../components/Slider";
 import SliderActiviteiten from "../components/SliderActiviteiten";
 import { ImBooks } from "react-icons/im";
 import EventIcon from "@material-ui/icons/Event";
+import LightbulbOutlinedIcon from '@mui/icons-material/LightbulbOutlined';
 
 const Home = () => {
   const [sliderData, setSliderData] = useState();
@@ -37,6 +38,9 @@ const Home = () => {
   return (
     <>
       <div className="Home">
+      <h2 className="hTwoHome">
+        <LightbulbOutlinedIcon style={{ fontSize: "400%"}} /> Tips
+      </h2>
         <h2 className="hTwoHome">
           <EventIcon style={{ fontSize: "400%" }} /> Activiteiten
         </h2>
