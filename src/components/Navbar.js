@@ -10,7 +10,6 @@ import { RiMenu5Fill } from "react-icons/ri";
 import { RiCloseLine } from "react-icons/ri";
 import { NavLink } from "react-router-dom";
 
-
 const Navbar = () => {
   const [fontSize, setFontSize] = useContext(FontContext);
   const [showMenu, setShowMenu] = useState(false);
@@ -20,46 +19,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="navbar">
-        <section className="left">
-         <img src="images/ObaLogo.svg" alt="logo" className="logo" />
-          <ul className="listLeft list" className={showMenu ? "hidden" : ""}>
-            <li className="startNav" style={{ color: "teal" }}>
-              <NavLink
-                exact
-                activeClassName="active"
-                to="/"
-                className="navLink"
-                onClick={handleClick}
-              >
-                <HomeIcon style={{ fontSize: "5vw" }} />
-                Start
-              </NavLink>
-            </li>
-            <li className="activiteitenNav" style={{ color: "teal" }}>
-              <NavLink
-                activeClassName="active"
-                to="/activiteiten"
-                className="navLink"
-                onClick={handleClick}
-              >
-                <EventIcon style={{ fontSize: "5vw" }} />
-                Activiteiten
-              </NavLink>
-            </li>
-            <li className="boekenNav" style={{ color: "teal" }}>
-              <NavLink
-                activeClassName="active"
-                to="/boeken"
-                className="navLink"
-                onClick={handleClick}
-              >
-                <ImBooks style={{ fontSize: "5vw" }} />
-                Boeken
-              </NavLink>
-            </li>
-          </ul>
-        </section>
-
+        <img src="images/ObaLogo.svg" alt="OBA simpel logo" className="logo" />
         <button className="menuBtn" onClick={handleClick}>
           {showMenu ? (
             <RiCloseLine className="RiClose" />
@@ -67,9 +27,46 @@ const Navbar = () => {
             <RiMenu5Fill className="RiMenu" />
           )}
         </button>
-
-        <section className="right">
-          <ul className="listRight list" id={showMenu ? "hidden" : ""}>
+        <div className="left">
+          <ul className="listLeft" id={showMenu ? "hidden" : ""}>
+            <li>
+              <NavLink
+                exact
+                activeClassName="active"
+                to="/"
+                className="navLink"
+                onClick={handleClick}
+              >
+                <HomeIcon style={{ fontSize: "50px" }} />
+                Start
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                activeClassName="active"
+                to="/activiteiten"
+                className="navLink"
+                onClick={handleClick}
+              >
+                <EventIcon style={{ fontSize: "50px" }} />
+                Activiteiten
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                activeClassName="active"
+                to="/boeken"
+                className="navLink"
+                onClick={handleClick}
+              >
+                <ImBooks style={{ fontSize: "50px" }} />
+                Boeken
+              </NavLink>
+            </li>
+          </ul>
+        </div>
+        <div className="right">
+          <ul className="listRight">
             <li>
               <button
                 className="btnsRight"
@@ -96,13 +93,12 @@ const Navbar = () => {
             </li>
             <li className="btnsRight">
               <a href="https://www.oba.nl/">
-                <ExitToAppIcon style={{ color: "teal" }} />
+                <ExitToAppIcon style={{ color: "teal", fontSize: "2vw" }} />
                 naar OBA.nl
               </a>
             </li>
           </ul>
-        </section>
-        <hr className="hr"/>
+        </div>
       </nav>
     </>
   );
