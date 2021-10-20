@@ -117,7 +117,7 @@ body {
 
 .arrowLeft {
   position: absolute;
-  top: 25%;
+  top: 100%;
   left: -2%;
   color: teal;
   z-index: 10;
@@ -132,7 +132,7 @@ body {
 
 .arrowRight {
   position: absolute;
-  top: 25%;
+  top: 100%;
   right: -2%;
   color: teal;
   z-index: 10;
@@ -159,11 +159,9 @@ body {
 }
 
 .sliderImageActiviteiten {
-  width: 24.5vw;
+  width: 25vw;
   height: 45vh;
   padding: .6vw;
-  -webkit-box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
-          box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
   margin: .2vw;
 }
 
@@ -194,7 +192,69 @@ body {
   left: 2.5%;
   color: white;
   font-weight: bold;
-  background-color: rgba(73, 167, 167, 0.5);
+  background-color: rgba(0, 155, 150, 0.5);
+}
+
+.containerTips {
+  position: relative;
+  height: 50vh;
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: solid lime 2px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.wrapperImagesTips {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.imageTips {
+  width: 80%;
+  height: 100%;
+}
+
+.overlayTipsOne, .overlayTipsTwo, .overlayTipsThree {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 155, 150, 0.5);
+  color: white;
+  width: 30%;
+  height: 40%;
+  top: 53%;
+}
+
+.overlayTipsOne {
+  left: 1%;
+}
+
+.overlayTipsTwo {
+  left: 33%;
+}
+
+.overlayTipsThree {
+  left: 65%;
 }
 
 .hTwoHome {

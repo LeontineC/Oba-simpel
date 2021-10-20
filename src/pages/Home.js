@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Slider from "../components/Slider";
 import SliderActiviteiten from "../components/SliderActiviteiten";
+import Tips from "../components/Tips";
 import { ImBooks } from "react-icons/im";
 import EventIcon from "@material-ui/icons/Event";
-import LightbulbOutlinedIcon from '@mui/icons-material/LightbulbOutlined';
+import { MdLightbulbOutline } from "react-icons/md";
 
 const Home = () => {
   const [sliderData, setSliderData] = useState();
@@ -39,8 +40,9 @@ const Home = () => {
     <>
       <div className="Home">
       <h2 className="hTwoHome">
-        <LightbulbOutlinedIcon style={{ fontSize: "400%"}} /> Tips
+        <MdLightbulbOutline style={{ fontSize: "400%" }}/> Tips
       </h2>
+      <Tips/>
         <h2 className="hTwoHome">
           <EventIcon style={{ fontSize: "400%" }} /> Activiteiten
         </h2>
