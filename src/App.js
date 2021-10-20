@@ -15,16 +15,6 @@ const App = () => {
 
   return (
 
-    <div> 
-   <FontProvider>
-    <Navbar />
-    <Header />
-   </FontProvider>
-
-    <SearchResultsBooks />
-      
-    </div>
-
     <>
       <FontProvider>
         <Router>
@@ -35,6 +25,7 @@ const App = () => {
               <Route exact path="/boeken" component={Boeken}></Route>
               <Route exact path="/activiteiten" component={Activiteiten}></Route>
             </Switch>
+            <SearchResultsBooks />
           </div>
         </Router>
       </FontProvider>
