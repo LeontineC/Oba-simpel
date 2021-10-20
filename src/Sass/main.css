@@ -100,9 +100,8 @@ body {
 }
 
 .sliderActiviteiten {
-  border: solid fuchsia 2px;
   width: 80%;
-  height: 70vh;
+  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,7 +160,7 @@ body {
 
 .sliderImageActiviteiten {
   width: 25vw;
-  height: 40vh;
+  height: 45vh;
   padding: .6vw;
 }
 
@@ -174,9 +173,36 @@ body {
   transition: transform .5s linear, -webkit-transform .5s linear;
 }
 
-h2 {
+.overlay {
+  position: absolute;
+  width: 95%;
+  height: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 31%;
+  left: 2.5%;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(73, 167, 167, 0.5);
+}
+
+.hTwoHome {
   margin-bottom: 0;
   margin-left: 12vw;
   color: teal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=main.css.map */

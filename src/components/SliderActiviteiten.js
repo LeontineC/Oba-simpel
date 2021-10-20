@@ -68,9 +68,9 @@ const SliderActiviteiten = ({ data }) => {
                       className="sliderImageActiviteiten"
                     />
                   <div className="overlay">
-                        <h3>{slide.begin}</h3>
-                        <h1>{slide.einde}</h1>
-                        <h3>{slide.title}</h3>
+                        <h2>{slide.begin}</h2>
+                        <h3>{slide.einde}</h3>
+                        <h2>{slide.title}</h2>
                        
                   </div>
                 </div>
