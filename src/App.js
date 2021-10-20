@@ -16,6 +16,7 @@ const App = () => {
     <Navbar />
     <Header />
    </FontProvider>
+
     <SearchResultsBooks />
       
     </div>
