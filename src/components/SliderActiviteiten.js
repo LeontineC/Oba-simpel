@@ -2,11 +2,10 @@ import React, { useState } from "react";
 import ArrowLeftIcon from "@material-ui/icons/ArrowLeft";
 import ArrowRightIcon from "@material-ui/icons/ArrowRight";
 
-const Slider = ({ data }) => {
+const SliderActiviteiten = ({ data }) => {
   const [current, setCurrent] = useState(0);
 
-  if (data.length > 10) data.length = 10;
-
+  if (data.length > 7) data.length = 7;
   const length = data.length;
 
   const currentIndex = (current) => {
@@ -22,7 +21,6 @@ const Slider = ({ data }) => {
       (current + 4) % length,
       (current + 5) % length,
       (current + 6) % length,
-      (current + 7) % length,
     ];
   };
 
@@ -40,37 +38,38 @@ const Slider = ({ data }) => {
     });
   };
 
-  console.log(current);
-  console.log(currentIndex(current));
-
   if (!Array.isArray(data) || data.length <= 0) {
-    return null; //in case no array or no slides
+    return null;
   }
 
   return (
     <>
-      <section className="slider">
-        <button className="arrowBtnLeft">
+      <section className="sliderActiviteiten">
+        <button className="arrowLeft">
           <ArrowLeftIcon style={{ fontSize: "200px" }} onClick={prevSlide} />
         </button>
-        <button className="arrowBtnRight">
+        <button className="arrowRight">
           <ArrowRightIcon style={{ fontSize: "200px" }} onClick={nextSlide} />
         </button>
-        <div className="wrapper">
+        <div className="wrapperActiviteiten">
           {currentIndex(current).map((index, position) => {
             const slide = data[index];
             return (
               <div
-                className={index === current ? "slide active" : "slide"}
+                className={index === current ? "slideA active" : "slideA"}
                 key={index}
                 style={{ transform: `translateX(${(position - 1) * 100}%)` }}
               >
                 <img
-                  src={slide.omslagafbeeldingen[1]}
+                  src={slide.omslagafbeeldingen[0]}
                   alt=""
-                  className="sliderImage"
+                  className="sliderImageActiviteiten"
                 />
-                <h3 className="titleSlide">{slide.title}</h3>
+                <div className="overlay">
+                  <h2>{slide.datum}</h2>
+                  <h3>{slide.tijd}</h3>
+                  <h2>{slide.title}</h2>
+                </div>
               </div>
             );
           })}
@@ -80,4 +79,4 @@ const Slider = ({ data }) => {
   );
 };
 
-export default Slider;
+export default SliderActiviteiten;

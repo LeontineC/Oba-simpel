@@ -1,0 +1,62 @@
+.containerTips {
+    position: relative;
+    height: 70vh;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    padding: 0;
+}
+
+.wrapperImagesTips {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    height: 100%;
+    width: 100%;
+}
+
+.imageTips {
+    width: 22vw;
+    height: 50vh;
+    padding: 0;
+}
+
+
+
+
+
+.overlayTipsOne, .overlayTipsTwo, .overlayTipsThree {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 155, 150, 0.5);
+    color: white;
+    width: 30%;
+    height: 30%;
+    top: 56%;
+}
+
+.overlayTipsOne {
+    left: 2.6%;
+}
+
+.overlayTipsTwo {
+    left: 35%;
+}
+
+.overlayTipsThree {
+    left: 67.5%;
+}
+
+.overlayTipsOne:hover {
+    color: lime;
+}
+
+
+
+
+

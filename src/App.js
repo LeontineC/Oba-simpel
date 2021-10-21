@@ -9,6 +9,7 @@ import Activiteiten from "./pages/Activiteiten";
 import Boeken from "./pages/Boeken";
 import Home from "./pages/Home";
 
+
 const App = () => {
   const [fontSize, setFontSize] = useState(20);
   const value = { fontSize, setFontSize };
