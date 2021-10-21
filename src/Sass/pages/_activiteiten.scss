@@ -1,0 +1,57 @@
+.mainActCal {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  .ActCal {
+    width: 200px;
+    height: 250px;
+    /* background-color: rgb(0, 155, 150); */
+    margin: 30px;
+    border: 3px solid rgb(0, 155, 150);
+    font-size: 1.3rem;
+    color: rgb(0, 155, 150);
+    border-radius: 2%;
+    overflow: hidden;
+  }
+  .ActCal:hover {
+    border-color: rgb(1, 117, 113);
+    color: rgb(1, 117, 113);
+  }
+  .ActCal p {
+    width: 90%;
+    margin: 5px auto;
+    font-size: 1rem;
+  }
+  .ActImg{
+    /* height: 75px; */
+    width: 100%;
+    
+  }
+  .ActImg img{
+    width: 100%;
+    object-fit: cover;
+    max-height: 200px;
+    
+  }
+  .ActInfo{
+    background-color: Rgb(0, 155, 150);
+    color: white;
+  }
+  .randomActCal {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 2px solid rgb(0, 155, 150);
+  }
+  .raActCal{
+    width: 150px;
+    height: 30px;
+    background-color: rgb(0, 155, 150);
+    margin: 30px;
+    border: 3px solid rgb(0, 155, 150);
+    font-size: 1rem;
+    color: white;
+  border-radius: 2%;
+  }
+  /* Rgb(0, 155, 150) */
+  /* Rgb(150, 150, 150) */
