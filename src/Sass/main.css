@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   color: purple;
 }
@@ -16,7 +23,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-left: 10%;
-  margin-right: 10%;
 }
 
 .wrapper {
@@ -42,8 +48,8 @@ body {
 }
 
 .sliderImage {
-  width: 15vw;
-  height: 50vh;
+  width: 17.5vw;
+  height: 60vh;
   margin-right: 1.5vw;
   border: solid 4px teal;
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 2.6px;
@@ -101,7 +107,7 @@ body {
 
 .sliderActiviteiten {
   width: 80%;
-  height: 50vh;
+  height: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,12 +118,11 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-left: 10%;
-  margin-right: 10%;
 }
 
 .arrowLeft {
   position: absolute;
-  top: 100%;
+  top: 120%;
   left: -2%;
   color: teal;
   z-index: 10;
@@ -132,7 +137,7 @@ body {
 
 .arrowRight {
   position: absolute;
-  top: 100%;
+  top: 120%;
   right: -2%;
   color: teal;
   z-index: 10;
@@ -159,7 +164,7 @@ body {
 }
 
 .sliderImageActiviteiten {
-  width: 25vw;
+  width: 26vw;
   height: 45vh;
   padding: .6vw;
   margin: .2vw;
@@ -176,7 +181,7 @@ body {
 
 .overlay {
   position: absolute;
-  width: 96%;
+  width: 95%;
   height: 65%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -188,6 +193,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   top: 31%;
   left: 2.5%;
   color: white;
@@ -197,7 +205,7 @@ body {
 
 .containerTips {
   position: relative;
-  height: 50vh;
+  height: 70vh;
   width: 75%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -208,8 +216,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: solid lime 2px;
-  margin: 0 auto;
+  margin-left: 10%;
   padding: 0;
 }
 
@@ -218,13 +225,20 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   height: 100%;
   width: 100%;
 }
 
 .imageTips {
-  width: 80%;
-  height: 100%;
+  width: 22vw;
+  height: 50vh;
+  padding: 0;
 }
 
 .overlayTipsOne, .overlayTipsTwo, .overlayTipsThree {
@@ -241,20 +255,33 @@ body {
   background-color: rgba(0, 155, 150, 0.5);
   color: white;
   width: 30%;
-  height: 40%;
-  top: 53%;
+  height: 30%;
+  top: 56%;
 }
 
 .overlayTipsOne {
-  left: 1%;
+  left: 2.6%;
 }
 
 .overlayTipsTwo {
-  left: 33%;
+  left: 35%;
 }
 
 .overlayTipsThree {
-  left: 65%;
+  left: 67.5%;
+}
+
+.overlayTipsOne:hover {
+  color: lime;
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .hTwoHome {
