@@ -45,10 +45,10 @@ const SliderActiviteiten = ({ data }) => {
   return (
     <>
       <section className="sliderActiviteiten">
-        <button className="arrowLeft">
+        <button className="arrowBtnLeft">
           <ArrowLeftIcon style={{ fontSize: "200px" }} onClick={prevSlide} />
         </button>
-        <button className="arrowRight">
+        <button className="arrowBtnRight">
           <ArrowRightIcon style={{ fontSize: "200px" }} onClick={nextSlide} />
         </button>
         <div className="wrapperActiviteiten">
@@ -65,7 +65,7 @@ const SliderActiviteiten = ({ data }) => {
                   alt=""
                   className="sliderImageActiviteiten"
                 />
-                <div className="overlay">
+                <div className="overlayActiviteiten">
                   <h2>{slide.datum}</h2>
                   <h3>{slide.tijd}</h3>
                   <h2>{slide.title}</h2>

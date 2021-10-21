@@ -40,8 +40,8 @@ const Home = () => {
 
   return (
     <>
-      <div className="Home">
-      <h2 className="hTwoHome">
+      <div className="Home" style={{ marginTop: "20%" }}>
+      <h2 className="hTwoHome" style={{fontSize:`${fontSize}px`}}>
         <MdLightbulbOutline style={{ fontSize: "400%" }}/> Tips
       </h2>
       <Tips/>

@@ -8,6 +8,9 @@ import SearchResultsBooks from './pages/SearchResultsBooks'
 import Activiteiten from "./pages/Activiteiten";
 import Boeken from "./pages/Boeken";
 import Home from "./pages/Home";
+import Maatje from "./pages/Maatje";
+import PassendLezen from "./pages/PassendLezen";
+import EbooksLuisterBoeken from "./pages/EbooksLuisterBoeken";
 
 
 const App = () => {
@@ -26,6 +29,9 @@ const App = () => {
               <Route exact path="/boeken" component={Boeken}></Route>
               <Route exact path="/activiteiten" component={Activiteiten}></Route>
               <Route exact path="/searchResultsbooks" component={SearchResultsBooks}></Route>
+              <Route exact path="/maatje" component={Maatje}></Route>
+              <Route exact path="/passendlezen" component={PassendLezen}></Route>
+              <Route exact path="/ebooksluisterboeken" component={EbooksLuisterBoeken}></Route>
             </Switch>
           </div>
         </Router>
