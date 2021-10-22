@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./Searchbar.css";
 import SearchIcon from "@mui/icons-material/Search";
 import CloseIcon from "@mui/icons-material/Close";
 
