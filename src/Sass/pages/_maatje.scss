@@ -1,0 +1,31 @@
+.maatje {
+    margin: 0 auto ;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    img {
+        width: 30%;
+        float: right;
+        margin-top: 10%;
+       height: 120vh;
+    }
+}
+
+.text {
+    margin: 20% auto 10% auto;
+    text-align: center;
+    padding: 0 10%;
+    h1 {
+        margin-bottom: 5%;
+    }
+    h2 {
+        margin-bottom: 3%;
+    }
+    p {
+        margin-bottom: 3%;
+    }
+    a {
+        color: teal;
+    }
+}
+

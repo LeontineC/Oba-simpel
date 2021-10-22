@@ -3,6 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -39,7 +40,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 65%;
+  width: 60%;
 }
 
 .left ul {
@@ -72,7 +73,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 35%;
+  width: 40%;
   padding: 1vw;
   margin-top: 2vw;
   margin-right: 5vw;
@@ -130,7 +131,8 @@
   margin-left: 2vw;
 }
 
-.listLeft, .listRight {
+.listLeft,
+.listRight {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -159,6 +161,7 @@
 
 .active {
   color: gray;
+  text-decoration: underline;
 }
 
 .btnsRight {
@@ -201,7 +204,10 @@
     color: teal;
     z-index: 20;
   }
-  .listLeft, .listRight {
+  .left,
+  .right,
+  .listLeft,
+  .listRight {
     display: none;
   }
   .logo {
@@ -242,7 +248,7 @@
 .slider {
   position: relative;
   height: 70vh;
-  width: 80%;
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -252,12 +258,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 10%;
+  margin: 0 auto;
+  border: lime 1px solid;
 }
 
 .wrapper {
   position: relative;
-  width: 95%;
+  width: 76%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -266,6 +273,7 @@
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
+  border: 1px solid fuchsia;
 }
 
 .slide {
@@ -280,7 +288,7 @@
 .sliderImage {
   width: 17.5vw;
   height: 60vh;
-  margin-right: 1.5vw;
+  margin: 0 .7vw;
   border: solid 4px teal;
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 2.6px;
           box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 2.6px;
@@ -293,10 +301,12 @@
 
 .arrowBtnLeft {
   position: absolute;
-  top: 30%;
-  left: -12%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 5%;
   color: teal;
-  z-index: 8;
+  z-index: 9;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -308,10 +318,12 @@
 
 .arrowBtnRight {
   position: absolute;
-  top: 30%;
-  right: -12%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  right: -8%;
   color: teal;
-  z-index: 8;
+  z-index: 9;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -330,14 +342,14 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   top: 80%;
-  left: 5%;
+  left: 32px;
   color: black;
   font-weight: bold;
 }
 
 .sliderActiviteiten {
   position: relative;
-  width: 80%;
+  width: 100vw;
   height: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -348,12 +360,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 10%;
+  margin: 0 auto;
+  border: lime 2px solid;
 }
 
 .wrapperActiviteiten {
   position: relative;
-  width: 100%;
+  width: 78%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -362,6 +375,7 @@
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
+  border: solid fuchsia 2px;
 }
 
 .slideA {
@@ -374,9 +388,9 @@
 }
 
 .sliderImageActiviteiten {
-  width: 26vw;
+  width: 25.5vw;
   height: 45vh;
-  padding: .6vw;
+  padding: .5vw;
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
           box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
   margin: .2vw;
@@ -419,8 +433,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 15% 0 10%;
+  margin: 0 auto;
   padding: 0;
+  border: solid turquoise 1px;
 }
 
 .wrapperImagesTips {
@@ -449,6 +464,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -459,7 +475,7 @@
   color: white;
   width: 29.6%;
   height: 30%;
-  top: 55.1%;
+  top: 55%;
 }
 
 .overlayTipsOne {
@@ -614,6 +630,43 @@
 
 /* Rgb(0, 155, 150) */
 /* Rgb(150, 150, 150) */
+.maatje {
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.maatje img {
+  width: 30%;
+  float: right;
+  margin-top: 10%;
+  height: 120vh;
+}
+
+.text {
+  margin: 20% auto 10% auto;
+  text-align: center;
+  padding: 0 10%;
+}
+
+.text h1 {
+  margin-bottom: 5%;
+}
+
+.text h2 {
+  margin-bottom: 3%;
+}
+
+.text p {
+  margin-bottom: 3%;
+}
+
+.text a {
+  color: teal;
+}
+
 .modal {
   position: fixed;
   top: 50%;

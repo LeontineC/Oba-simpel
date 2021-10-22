@@ -88,7 +88,7 @@ const Navbar = () => {
             <li>
               <button className="btnsRight">
                 <LanguageIcon style={{ color: "teal", fontSize: "2vw" }} />
-                Taal
+                <p style={{width:"7vw"}}>Taal</p>
               </button>
             </li>
             <li className="btnsRight">
