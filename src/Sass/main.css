@@ -3,7 +3,6 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 .navbar {
@@ -204,8 +203,6 @@
     color: teal;
     z-index: 20;
   }
-  .left,
-  .right,
   .listLeft,
   .listRight {
     display: none;
@@ -213,7 +210,7 @@
   .logo {
     width: 50%;
     margin-right: 20%;
-    z-index: 20;
+    z-index: 11;
   }
   #hidden {
     position: absolute;
@@ -490,6 +487,10 @@
   left: 67.6%;
 }
 
+.overlayTipsOne:hover, .overlayTipsTwo:hover, .overlayTipsThree:hover {
+  text-decoration: underline;
+}
+
 .home {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -638,13 +639,6 @@
           box-sizing: border-box;
 }
 
-.maatje img {
-  width: 30%;
-  float: right;
-  margin-top: 10%;
-  height: 120vh;
-}
-
 .text {
   margin: 20% auto 10% auto;
   text-align: center;
@@ -665,6 +659,11 @@
 
 .text a {
   color: teal;
+  text-decoration: none;
+}
+
+.text a:hover {
+  text-decoration: underline;
 }
 
 .modal {

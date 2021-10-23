@@ -50,8 +50,8 @@
     left: 67.6%;
 }
 
-@media screen and (max-width: 768px) {
-
+.overlayTipsOne:hover, .overlayTipsTwo:hover, .overlayTipsThree:hover{
+    text-decoration: underline;
 }
 
 

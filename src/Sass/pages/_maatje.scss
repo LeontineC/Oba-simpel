@@ -3,12 +3,7 @@
     width: 100vw;
     height: 100vh;
     box-sizing: border-box;
-    img {
-        width: 30%;
-        float: right;
-        margin-top: 10%;
-       height: 120vh;
-    }
+    
 }
 
 .text {
@@ -26,6 +21,10 @@
     }
     a {
         color: teal;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
     }
 }
 

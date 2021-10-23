@@ -27,8 +27,8 @@ const Navbar = () => {
             <RiMenu5Fill className="RiMenu" />
           )}
         </button>
-        <div className="left">
-          <ul className="listLeft" id={showMenu ? "hidden" : ""}>
+        <div className="left" id={showMenu ? "hidden" : ""}>
+          <ul className="listLeft" >
             <li>
               <NavLink
                 exact

@@ -6,11 +6,7 @@ const Maatje = () => {
 
   return (
     <div className="maatje" style={{ fontSize: `${fontSize}px` }}>
-      <img
-        // src="https://images.unsplash.com/photo-1515125520141-3e3b67bc0a88?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80"
-      src="https://images.pexels.com/photos/7034643/pexels-photo-7034643.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" 
-        alt=""
-      />
+     
       <div className="text">
       <h1>Iedere maand een stapel favoriete boeken, cd’s of films thuis?</h1>
       <p>
@@ -27,7 +23,7 @@ const Maatje = () => {
       <h2>Hoe werkt het?</h2>
       <p>
         Als OBA-lid kunt u zich aanmelden door een mail met uw naam, adres en
-        telefoonnummer te sturen naar obamaatje@oba.nl. U kunt ook bellen naar
+        telefoonnummer te sturen naar<a href="mailto: obamaatje@oba.nl"> obamaatje@oba.nl </a>. U kunt ook bellen naar
         020 - 52 30 900. Een medewerker van de OBA neemt dan contact met u op om
         een afspraak te maken voor een intakegesprek.
       </p>
@@ -39,6 +35,7 @@ const Maatje = () => {
       >
         <p>ga naar het inschrijfformulier</p>
       </a>
+      
       </div>
     </div>
   );
