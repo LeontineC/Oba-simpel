@@ -19,8 +19,6 @@ const SliderActiviteiten = ({ data }) => {
       (current + 2) % length,
       (current + 3) % length,
       (current + 4) % length,
-      (current + 5) % length,
-      (current + 6) % length,
     ];
   };
 
