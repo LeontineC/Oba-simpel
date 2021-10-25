@@ -27,8 +27,8 @@ const Navbar = () => {
             <RiMenu5Fill className="RiMenu" />
           )}
         </button>
-        <div className="left" id={showMenu ? "hidden" : ""}>
-          <ul className="listLeft" >
+        <div className="left" >
+          <ul className="listLeft" id={showMenu ? "hidden" : ""}>
             <li>
               <NavLink
                 exact
@@ -92,7 +92,7 @@ const Navbar = () => {
               </button>
             </li>
             <li className="btnsRight">
-              <a href="https://www.oba.nl/">
+              <a className="anchorNav" href="https://www.oba.nl/">
                 <ExitToAppIcon style={{ color: "teal", fontSize: "2vw" }} />
                 naar OBA.nl
               </a>
