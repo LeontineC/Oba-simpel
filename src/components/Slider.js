@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ArrowLeftIcon from "@material-ui/icons/ArrowLeft";
 import ArrowRightIcon from "@material-ui/icons/ArrowRight";
+import Book from "../components/Book"
 
 const Slider = ({ data }) => {
   const [current, setCurrent] = useState(0);
@@ -64,13 +65,16 @@ const Slider = ({ data }) => {
                 className={index === current ? "slide active" : "slide"}
                 key={index}
                 style={{ transform: `translateX(${(position - 1) * 100}%)` }}
-              >
-                <img
-                  src={slide.omslagafbeeldingen[1]}
-                  alt=""
-                  className="sliderImage"
-                />
-                <h3 className="titleSlide">{slide.title}</h3>
+              >                
+                <Book key={slide.id}
+                    title={slide.title} 
+                    omslagafbeeldingen={slide.omslagafbeeldingen[1]} 
+                    author={slide.auteurs}
+                    publisher={slide.uitgever}
+                    language={slide.taal}
+                    series={slide.series}
+                    description={slide.beschrijving}
+                    />
               </div>
             );
           })}

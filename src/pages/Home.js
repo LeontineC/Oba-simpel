@@ -52,14 +52,15 @@ const Home = () => {
         <h2 className="hTwoHome">
           <ImBooks style={{ fontSize: "400%" }} /> Grootletter boeken
         </h2>
-        <Slider data={sliderData.largetype.boeken} />
+        <Slider data={sliderData.largetype.boeken}
+         />
         <h2 className="hTwoHome">
           <ImBooks style={{ fontSize: "400%" }} /> Audio boeken
         </h2>
         <Slider data={sliderData.audio.boeken} />
         <h2 className="hTwoHome">
           <ImBooks style={{ fontSize: "400%" }} /> Boeken
-        </h2 >
+        </h2>
         <Slider data={sliderData.book.boeken} />
       </div>
     </>

@@ -7,8 +7,10 @@ const Book = ({ title, omslagafbeeldingen, author, publisher, language, series, 
     return (
 
         <article >
-            <h3>{title} / {author} </h3>
-            <button onClick={() => setIsOpen(true)}> <img src={omslagafbeeldingen} alt={"cover picture of " + title} /> </button>
+            <button className="sliderImage" onClick={() => setIsOpen(true)}> <img src={omslagafbeeldingen} alt={"cover picture of " + title} /> 
+            <h3>{title}</h3>
+            </button>
+            
             <BookDetails 
             omslagafbeeldingen={omslagafbeeldingen}
             title={title} 
