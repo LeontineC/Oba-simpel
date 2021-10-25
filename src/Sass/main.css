@@ -19,9 +19,9 @@
   left: 0;
   right: 0;
   z-index: 10;
-  color: teal;
+  color: #009b96;
   background-color: white;
-  border-bottom: solid teal 2px;
+  border-bottom: solid #009b96 2px;
 }
 
 .logo {
@@ -125,7 +125,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: teal;
+  color: #009b96;
   font-size: 1.5vw;
   margin-left: 2vw;
 }
@@ -137,7 +137,7 @@
 }
 
 .navLink {
-  color: teal;
+  color: #009b96;
   margin: 1vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -162,7 +162,7 @@
 }
 
 .btnsRight {
-  color: teal;
+  color: #009b96;
 }
 
 .menuBtn {
@@ -197,7 +197,7 @@
     background: none;
     border: none;
     outline: none;
-    color: teal;
+    color: #009b96;
     z-index: 20;
   }
   .listLeft, .listRight {
@@ -280,7 +280,7 @@
   width: 17.5vw;
   height: 60vh;
   margin-right: 1.5vw;
-  border: solid 4px teal;
+  border: solid 4px #009b96;
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 2.6px;
           box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 2.6px;
   padding: 12.5px;
@@ -294,7 +294,7 @@
   position: absolute;
   top: 30%;
   left: -15%;
-  color: teal;
+  color: #009b96;
   z-index: 10;
   cursor: pointer;
   -webkit-user-select: none;
@@ -309,7 +309,7 @@
   position: absolute;
   top: 30%;
   right: -15%;
-  color: teal;
+  color: #009b96;
   z-index: 10;
   cursor: pointer;
   -webkit-user-select: none;
@@ -353,7 +353,7 @@
   position: absolute;
   top: 120%;
   left: -2%;
-  color: teal;
+  color: #009b96;
   z-index: 10;
   cursor: pointer;
   -webkit-user-select: none;
@@ -368,7 +368,7 @@
   position: absolute;
   top: 120%;
   right: -2%;
-  color: teal;
+  color: #009b96;
   z-index: 10;
   cursor: pointer;
   -webkit-user-select: none;
@@ -516,7 +516,7 @@
 .hTwoHome {
   margin-bottom: 0;
   margin-left: 12vw;
-  color: teal;
+  color: #009b96;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
