@@ -39,4 +39,22 @@
         }
         
     }
+    
 }
+.div-genreFilterBtn{
+    width: 90%;
+    margin: 250px auto;
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    .genreFilterBtn{
+        width: 160px;
+        height: 65px;
+        background-color: rgb(1, 117, 113);
+        margin: 0 auto;
+        color: antiquewhite;
+        font-size: 1.5rem;
+    }
+}
+
