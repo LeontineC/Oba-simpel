@@ -8,6 +8,8 @@ const SliderActiviteiten = ({ data }) => {
   if (data.length > 7) data.length = 7;
   const length = data.length;
 
+ 
+
   const currentIndex = (current) => {
     if (current > length - 1) {
       return null;
