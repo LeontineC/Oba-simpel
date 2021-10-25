@@ -3,11 +3,10 @@ import ArrowLeftIcon from "@material-ui/icons/ArrowLeft";
 import ArrowRightIcon from "@material-ui/icons/ArrowRight";
 import Book from "../components/Book"
 
-const Slider = ({ data }) => {
+const Slider = ({ data }) => { 
   const [current, setCurrent] = useState(0);
 
   if (data.length > 10) data.length = 10;
-
   const length = data.length;
 
   const currentIndex = (current) => {
