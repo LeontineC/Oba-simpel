@@ -64,7 +64,7 @@ const Slider = ({ data }) => {
                 className={index === current ? "slide active" : "slide"}
                 key={index}
                 style={{ transform: `translateX(${(position - 1) * 100}%)` }}
-              >                
+                >  
                 <Book key={slide.id}
                     title={slide.title} 
                     omslagafbeeldingen={slide.omslagafbeeldingen[1]} 
