@@ -37,7 +37,7 @@ const Navbar = () => {
                 className="navLink"
                 onClick={handleClick}
               >
-                <HomeIcon style={{ fontSize: "50px" }} />
+                <HomeIcon style={{ fontSize: "50px" }}/>
                 Start
               </NavLink>
             </li>
