@@ -72,7 +72,7 @@ const Navbar = () => {
                 className="btnsRight"
                 onClick={() => setFontSize(fontSize + 2)}
               >
-                <TextFieldsIcon style={{ color: "teal", fontSize: "2vw" }} />
+                <TextFieldsIcon style={{ color: "$primary-color", fontSize: "2vw" }} />
                 vergroot letters
               </button>
             </li>
@@ -81,19 +81,19 @@ const Navbar = () => {
                 className="btnsRight"
                 onClick={() => setFontSize(fontSize - 2)}
               >
-                <TextFieldsIcon style={{ color: "teal", fontSize: "2vw" }} />
+                <TextFieldsIcon style={{ color: "$primary-color", fontSize: "2vw" }} />
                 verklein letters
               </button>
             </li>
             <li>
               <button className="btnsRight">
-                <LanguageIcon style={{ color: "teal", fontSize: "2vw" }} />
+                <LanguageIcon style={{ color: "$primary-color", fontSize: "2vw" }} />
                 Taal
               </button>
             </li>
             <li className="btnsRight">
               <a href="https://www.oba.nl/">
-                <ExitToAppIcon style={{ color: "teal", fontSize: "2vw" }} />
+                <ExitToAppIcon style={{ color: "$primary-color", fontSize: "2vw" }} />
                 naar OBA.nl
               </a>
             </li>
