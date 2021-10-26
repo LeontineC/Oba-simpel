@@ -92,8 +92,8 @@ const Navbar = () => {
               </button>
             </li>
             <li className="btnsRight">
-              <a href="https://www.oba.nl/">
-                <ExitToAppIcon style={{ color: "$primary-color", fontSize: "2vw" }} />
+              <a href="https://www.oba.nl/" style={{color: "teal"}}>
+                <ExitToAppIcon style={{ color: "teal", fontSize: "2vw" }} />
                 naar OBA.nl
               </a>
             </li>

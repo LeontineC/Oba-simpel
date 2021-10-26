@@ -65,6 +65,12 @@ const Slider = ({ data }) => {
                 key={index}
                 style={{ transform: `translateX(${(position - 1) * 100}%)` }}
                 >  
+                 <img
+                  src={slide.omslagafbeeldingen[1]}
+                  alt=""
+                  className="sliderImage"
+                />
+                <h3 className="titleSlide">{slide.title}</h3>
                 <Book key={slide.id}
                     title={slide.title} 
                     omslagafbeeldingen={slide.omslagafbeeldingen[1]} 

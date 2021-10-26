@@ -16,6 +16,9 @@ function ActivitiesLoop({ activities }) {
                       className="ActCal"
                       key={activity.id}
                     >
+                      <img src="images/activityicon_green.svg"
+                      alt="background agenda outline"
+                      className="activityicon"/>
                       
                       <div className="ActImg">
                         <img
