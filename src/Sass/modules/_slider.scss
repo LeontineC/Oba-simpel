@@ -26,8 +26,13 @@
 .sliderImage {
     width: 17.5vw;
     height: 60vh;
+<<<<<<< HEAD
     margin: 0 .7vw;
     border: solid 4px teal;
+=======
+    margin-right: 1.5vw;
+    border: solid 4px $primary-color;
+>>>>>>> 927fa4f7792a06c87209505335d4a0e57426217f
     box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 2.6px;
     padding: 12.5px;
     padding-bottom: 90px;
@@ -38,11 +43,18 @@
 
 .arrowBtnLeft {
     position: absolute;
+<<<<<<< HEAD
     top: 50%;
     transform: translate(-50%, -50%);
     left: 5%;
     color: teal;
     z-index: 9;
+=======
+    top: 30%;
+    left: -15%;
+    color: $primary-color;
+    z-index: 10;
+>>>>>>> 927fa4f7792a06c87209505335d4a0e57426217f
     cursor: pointer;
     user-select: none;
     border: none;
@@ -50,11 +62,18 @@
 }
 .arrowBtnRight {
     position: absolute;
+<<<<<<< HEAD
     top: 50%;
     transform: translate(-50%, -50%);
     right: -8%;
     color: teal;
     z-index: 9;
+=======
+    top: 30%;
+    right:-15%;
+    color: $primary-color;
+    z-index: 10;
+>>>>>>> 927fa4f7792a06c87209505335d4a0e57426217f
     cursor: pointer;
     user-select: none;
     border: none;

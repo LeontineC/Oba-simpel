@@ -1,4 +1,5 @@
 .navbar {
+<<<<<<< HEAD
   display: flex;
   text-decoration: none;
   align-items: center;
@@ -11,6 +12,20 @@
   color: teal;
   background-color: white;
   border-bottom: solid teal 2px;
+=======
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    color: $primary-color;
+    background-color: white;
+    border-bottom: solid $primary-color 2px;
+>>>>>>> 927fa4f7792a06c87209505335d4a0e57426217f
 }
 
 .logo {
@@ -60,6 +75,7 @@
       .anchorNav {
         text-decoration: none;
         display: flex;
+<<<<<<< HEAD
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: center;
@@ -68,6 +84,33 @@
         font-size: 1.5vw;
         margin-left: 2vw;
       }
+=======
+        li {
+            list-style-type: none;
+            
+            button {
+                outline: none;
+                border: none;
+                background: transparent;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.5vw;
+            }
+           a{
+                text-decoration: none;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: $primary-color;
+                font-size: 1.5vw;
+                margin-left: 2vw;
+            } 
+        }   
+>>>>>>> 927fa4f7792a06c87209505335d4a0e57426217f
     }
   }
 }
@@ -78,6 +121,7 @@
 }
 
 .navLink {
+<<<<<<< HEAD
   color: teal;
   margin: 1vw;
   display: flex;
@@ -85,6 +129,15 @@
   align-items: center;
   text-decoration: none;
   font-size: 30px;
+=======
+    color: $primary-color;
+    margin: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none; 
+    font-size: 30px; 
+>>>>>>> 927fa4f7792a06c87209505335d4a0e57426217f
 }
 
 .navLink:hover {
@@ -97,7 +150,11 @@
 }
 
 .btnsRight {
+<<<<<<< HEAD
   color: teal;
+=======
+    color: $primary-color;
+>>>>>>> 927fa4f7792a06c87209505335d4a0e57426217f
 }
 
 .menuBtn {
@@ -115,6 +172,7 @@
 }
 
 @media screen and (max-width: 650px) {
+<<<<<<< HEAD
   .menuBtn {
     display: flex;
     font-size: 300%;
@@ -135,6 +193,46 @@
     margin-right: 20%;
     z-index: 11;
   }
+=======
+    .menuBtn {
+        display: flex;
+        font-size: 300%;
+        margin-right: 20%;
+        background: none;
+        border: none;
+        outline: none;
+        color: $primary-color;
+        z-index: 20;
+    }
+    .listLeft, .listRight {
+        display: none;
+    }
+    .logo {
+        width: 50%;
+        margin-right: 20%;
+        z-index: 20;
+    }
+    #hidden {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        margin: 15% 0;
+        z-index: 10;
+    }
+    .left ul li {
+        font-size: 25px;
+    }
+}
+>>>>>>> 927fa4f7792a06c87209505335d4a0e57426217f
 
   #hidden {
     position: absolute;

@@ -5,7 +5,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin-left: 10%;
+}
+
+.arrowLeft {
+    position: absolute;
+    top: 120%;
+    left: -2%;
+    color: $primary-color;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+    border: none;
+    background: transparent;
+}
+
+.arrowRight {
+    position: absolute;
+    top: 120%;
+    right: -2%;
+    color: $primary-color;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+    border: none;
+    background: transparent;
 }
 
 .wrapperActiviteiten {

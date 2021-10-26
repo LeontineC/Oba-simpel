@@ -8,7 +8,7 @@ const Book = ({ title, omslagafbeeldingen, author, publisher, language, series, 
 
         <article >
             <button className="sliderImage" onClick={() => setIsOpen(true)}> <img src={omslagafbeeldingen} alt={"cover picture of " + title} /> 
-            <h3>{title}</h3>
+            <h5>{title}</h5>
             </button>
             
             <BookDetails 
@@ -26,3 +26,4 @@ const Book = ({ title, omslagafbeeldingen, author, publisher, language, series, 
 }
 
 export default Book
+
