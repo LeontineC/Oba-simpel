@@ -8,9 +8,9 @@
     left: 0;
     right: 0;
     z-index: 10;
-    color: teal;
+    color: $primary-color;
     background-color: white;
-    border-bottom: solid teal 2px;
+    border-bottom: solid $primary-color 2px;
 }
 
 .logo {
@@ -65,7 +65,7 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                color: teal;
+                color: $primary-color;
                 font-size: 1.5vw;
                 margin-left: 2vw;
             } 
@@ -78,7 +78,7 @@
 }
 
 .navLink {
-    color: teal;
+    color: $primary-color;
     margin: 1vw;
     display: flex;
     flex-direction: column;
@@ -96,7 +96,7 @@
 }
 
 .btnsRight {
-    color: teal;
+    color: $primary-color;
 }
 
 .menuBtn {
@@ -120,7 +120,7 @@
         background: none;
         border: none;
         outline: none;
-        color: teal;
+        color: $primary-color;
         z-index: 20;
     }
     .listLeft, .listRight {
