@@ -27,7 +27,7 @@ const Navbar = () => {
             <RiMenu5Fill className="RiMenu" />
           )}
         </button>
-        <div className="left" >
+        <div className="left">
           <ul className="listLeft" id={showMenu ? "hidden" : ""}>
             <li>
               <NavLink
@@ -37,7 +37,7 @@ const Navbar = () => {
                 className="navLink"
                 onClick={handleClick}
               >
-                <HomeIcon style={{ fontSize: "50px" }} />
+                <HomeIcon style={{ fontSize: "50px" }}/>
                 Start
               </NavLink>
             </li>

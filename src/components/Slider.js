@@ -5,12 +5,18 @@ import ArrowRightIcon from "@material-ui/icons/ArrowRight";
 const Slider = ({ data }) => {
   const [current, setCurrent] = useState(0);
 
-/*const Try = data.filter(noImage => noImage.omslagafbeeldingen[1] === "")
-console.log(Try) */
 
-  if (data.length > 10) data.length = 10;
 
-  const length = data.length;
+// const filtered = data.filter(function (el) {
+  // return el != null;
+// });
+
+// console.log(filtered);
+
+if (data.length > 10) data.length = 10;
+const length = data.length;
+
+
 
   const currentIndex = (current) => {
     if (current > length - 1) {

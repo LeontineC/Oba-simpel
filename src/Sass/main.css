@@ -256,7 +256,6 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
-  border: lime 1px solid;
 }
 
 .wrapper {
@@ -270,7 +269,6 @@
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
-  border: 1px solid fuchsia;
 }
 
 .slide {
@@ -358,7 +356,6 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
-  border: lime 2px solid;
 }
 
 .wrapperActiviteiten {
@@ -372,7 +369,6 @@
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
-  border: solid fuchsia 2px;
 }
 
 .slideA {
@@ -432,7 +428,6 @@
           align-items: center;
   margin: 0 auto;
   padding: 0;
-  border: solid turquoise 1px;
 }
 
 .wrapperImagesTips {
@@ -632,9 +627,9 @@
 /* Rgb(0, 155, 150) */
 /* Rgb(150, 150, 150) */
 .maatje {
-  margin: 0 auto;
+  margin: 0 auto 20% auto;
   width: 100vw;
-  height: 100vh;
+  height: 120vh;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -643,6 +638,11 @@
   margin: 20% auto 20% auto;
   text-align: center;
   padding: 0 10%;
+}
+
+.text img {
+  width: 40%;
+  margin-bottom: 5%;
 }
 
 .text h1 {
@@ -664,6 +664,128 @@
 
 .text a:hover {
   text-decoration: underline;
+}
+
+.ebooksLuisterBoeken {
+  margin: 0 auto 30% auto;
+  width: 100vw;
+  height: 150vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.text {
+  margin: 0 auto 20% auto;
+  text-align: center;
+}
+
+.text img {
+  width: 40%;
+  margin-bottom: 5%;
+}
+
+.text h1 {
+  margin-bottom: 5%;
+}
+
+.text h2 {
+  margin-bottom: 3%;
+}
+
+.text p {
+  margin-bottom: 3%;
+}
+
+.text a {
+  -webkit-text-decoration: underline teal dashed;
+          text-decoration: underline teal dashed;
+}
+
+.text a:hover {
+  -webkit-text-decoration: underline teal;
+          text-decoration: underline teal;
+}
+
+.instructionsEBooks {
+  width: 100%;
+  margin-bottom: 100px;
+  border: solid lime 1px;
+}
+
+.instructionsEBooks ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  height: 50vh;
+}
+
+.instructionsEBooks ul li {
+  width: 80%;
+  height: 100%;
+  margin: 2%;
+  border: solid teal 2px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1%;
+}
+
+.passendlezen {
+  margin: 0 auto 20% auto;
+  width: 100vw;
+  height: 120vh;
+}
+
+.text {
+  margin: 0 auto 20% auto;
+  text-align: center;
+  padding: 0 10%;
+}
+
+.text img {
+  width: 40%;
+  margin-bottom: 5%;
+}
+
+.text h1 {
+  margin-bottom: 5%;
+}
+
+.text h2 {
+  margin-bottom: 3%;
+}
+
+.text p {
+  margin-bottom: 3%;
+}
+
+.text a {
+  -webkit-text-decoration: underline teal;
+          text-decoration: underline teal;
+}
+
+.text a:hover {
+  -webkit-text-decoration: underline teal dashed;
+          text-decoration: underline teal dashed;
 }
 
 .modal {
