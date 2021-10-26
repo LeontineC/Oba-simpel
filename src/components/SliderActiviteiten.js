@@ -8,6 +8,8 @@ const SliderActiviteiten = ({ data }) => {
   if (data.length > 7) data.length = 7;
   const length = data.length;
 
+ 
+
   const currentIndex = (current) => {
     if (current > length - 1) {
       return null;
@@ -19,8 +21,6 @@ const SliderActiviteiten = ({ data }) => {
       (current + 2) % length,
       (current + 3) % length,
       (current + 4) % length,
-      (current + 5) % length,
-      (current + 6) % length,
     ];
   };
 
@@ -45,10 +45,10 @@ const SliderActiviteiten = ({ data }) => {
   return (
     <>
       <section className="sliderActiviteiten">
-        <button className="arrowLeft">
+        <button className="arrowBtnLeft">
           <ArrowLeftIcon style={{ fontSize: "200px" }} onClick={prevSlide} />
         </button>
-        <button className="arrowRight">
+        <button className="arrowBtnRight">
           <ArrowRightIcon style={{ fontSize: "200px" }} onClick={nextSlide} />
         </button>
         <div className="wrapperActiviteiten">

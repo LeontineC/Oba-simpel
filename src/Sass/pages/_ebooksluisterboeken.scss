@@ -1,0 +1,55 @@
+.ebooksLuisterBoeken {
+  margin: 0 auto 30% auto;
+  width: 100vw;
+  height: 150vh;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.text {
+  margin: 0 auto 20% auto;
+  text-align: center;
+  img {
+    width: 40%;
+    margin-bottom: 5%;
+  }
+  h1 {
+    margin-bottom: 5%;
+  }
+  h2 {
+    margin-bottom: 3%;
+  }
+  p {
+    margin-bottom: 3%;
+  }
+  a {
+    text-decoration: underline teal dashed;
+  }
+  a:hover {
+    text-decoration: underline teal;
+  }
+}
+
+.instructionsEBooks {
+  width: 100%;
+  margin-bottom: 100px;
+  border: solid lime 1px;
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    height: 50vh;
+    li {
+      width: 80%;
+      height: 100%;
+      margin: 2%;
+      border: solid teal 2px;
+      box-shadow: $box_shadow_first;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1%;
+    }
+  }
+}

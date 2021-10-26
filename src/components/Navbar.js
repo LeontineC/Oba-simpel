@@ -37,7 +37,7 @@ const Navbar = () => {
                 className="navLink"
                 onClick={handleClick}
               >
-                <HomeIcon style={{ fontSize: "50px" }} />
+                <HomeIcon style={{ fontSize: "50px" }}/>
                 Start
               </NavLink>
             </li>
@@ -88,11 +88,11 @@ const Navbar = () => {
             <li>
               <button className="btnsRight">
                 <LanguageIcon style={{ color: "teal", fontSize: "2vw" }} />
-                Taal
+                <p style={{width:"7vw"}}>Taal</p>
               </button>
             </li>
             <li className="btnsRight">
-              <a href="https://www.oba.nl/">
+              <a className="anchorNav" href="https://www.oba.nl/">
                 <ExitToAppIcon style={{ color: "teal", fontSize: "2vw" }} />
                 naar OBA.nl
               </a>
