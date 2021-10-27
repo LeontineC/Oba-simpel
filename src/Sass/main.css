@@ -542,6 +542,20 @@
   gap: 5vw;
 }
 
+.result_card h2 {
+  color: #009b96;
+  margin: 0 auto;
+}
+
+.result_card div button {
+  width: 160px;
+  height: 65px;
+  background-color: #017571;
+  margin: 0 auto;
+  color: antiquewhite;
+  font-size: 1.5rem;
+}
+
 .result_card article {
   padding: 2vw;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -589,7 +603,25 @@
       flex-wrap: wrap;
 }
 
-.div-genreFilterBtn .genreFilterBtn {
+.div-genreFilterBtn button {
+  width: 160px;
+  height: 65px;
+  background-color: #017571;
+  margin: 0 auto;
+  color: antiquewhite;
+  font-size: 1.5rem;
+}
+
+.div-genreFilterBtn .inputDiv button {
+  width: 160px;
+  height: 65px;
+  background-color: #017571;
+  margin: 0 auto;
+  color: antiquewhite;
+  font-size: 1.5rem;
+}
+
+.genreFilterBtn {
   width: 160px;
   height: 65px;
   background-color: #017571;
