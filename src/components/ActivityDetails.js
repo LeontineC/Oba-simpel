@@ -19,24 +19,26 @@ const ActivityDetails = ({ location, tijd, datum, open, children, onClose, title
                 {children}
 
                 {children}
+
                 <h3>{title}</h3>
-                <h4>{datum}</h4>
-                <h5>{tijd}</h5>
+                <div className="time_details">
+                    <h4>{datum}</h4>
+                    <h5>{tijd}</h5></div>
+
                 <div className="modal_display">
                     <div>
                         <img className="modal_image" src={omslagafbeeldingen} alt={"cover picture of " + title} />
                     </div>
-                    <div className="modal_details">
+                    <div className="modal_details activity_modal">
                         <p><span>{description}</span></p>
-                        <p>Neem een kijkje in de OBA agenda en reserveer vooraf je plekje. Blijf je liever nog even thuis?
-Dan hebben we een leuk online aanbod voor je.</p>
-                        <button>Aanmelden</button>
+                        <span className="register">Aanmelden</span>
                         <p>Op dit moment kun je alleen op afspraak komen.</p>
-                        <p>Bereid je voor op je bezoek aan de OBA en doe de gezondheidscheck voordat je naar
-de OBA komt.</p>
-<p>{location} | Osdorpplein 16 | 1068 EL AMSTERDAM
+                        <p className="italics">Bereid je voor op je bezoek aan de OBA en doe de gezondheidscheck voordat je naar
+                            de OBA komt.</p>
+                        <button className="register_button">Aanmelden</button>
+                        <p>{location} | Osdorpplein 16 | 1068EL {location.slice(4)}</p>
 
-T: 020-5230900 | E: osdorp@oba.nl</p>
+                        <span>T: 020-5230900 | E: oba@oba.nl</span>
                     </div>
                 </div>
             </div>
