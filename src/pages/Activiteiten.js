@@ -55,7 +55,7 @@ const Activiteiten = () => {
       <div className="randomActCal">
         <button
           name="c_nextweek"
-          style={checked === "c_nextweek" ? { backgroundColor: "red" } : null}
+          style={checked === "c_nextweek" ? { backgroundColor: "gray", textDecoration: "underline" } : null}
           onClick={Uri}
           className="raActCal"
         >
@@ -63,7 +63,7 @@ const Activiteiten = () => {
         </button>
         <button
           name="d_thismonth"
-          style={checked === "d_thismonth" ? { backgroundColor: "red" } : null}
+          style={checked === "d_thismonth" ? { backgroundColor: "gray", textDecoration: "underline" } : null}
           onClick={Uri}
           className="raActCal"
         >
@@ -71,7 +71,7 @@ const Activiteiten = () => {
         </button>
         <button
           name="e_nextmonth"
-          style={checked === "e_nextmonth" ? { backgroundColor: "red" } : null}
+          style={checked === "e_nextmonth" ? { backgroundColor: "gray", textDecoration: "underline" } : null}
           onClick={Uri}
           className="raActCal"
         >
@@ -79,7 +79,7 @@ const Activiteiten = () => {
         </button>
         <button
           name="f_next3month"
-          style={checked === "f_next3month" ? { backgroundColor: "red" } : null}
+          style={checked === "f_next3month" ? { backgroundColor: "gray", textDecoration: "underline" } : null}
           onClick={Uri}
           className="raActCal"
         >
@@ -87,7 +87,7 @@ const Activiteiten = () => {
         </button>
         <button
           name="g_thisyear"
-          style={checked === "g_thisyear" ? { backgroundColor: "red" } : null}
+          style={checked === "g_thisyear" ? { backgroundColor: "gray" , textDecoration: "underline"} : null}
           onClick={Uri}
           className="raActCal"
         >

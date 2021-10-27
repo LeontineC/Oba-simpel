@@ -7,7 +7,7 @@ const EbooksLuisterBoeken = () => {
 
   return (
     <div className="ebooksLuisterBoeken" style={{ fontSize: `${fontSize}px` }}>
-      <div className="text">
+      <div className="textEBooks">
         <h1>Hoe leen je e-books en luisterboeken?</h1>
         <img
           src="https://www.oba.nl/dam/0420_luisterboeken.jpg.rendition.792.1267.jpeg"
@@ -28,11 +28,12 @@ const EbooksLuisterBoeken = () => {
             Bekijk hoe het werkt op onlinebibliotheek.nl{" "}
           </a>{" "}
         </p>
+        </div>
         <hr style={{ width: "50%", marginLeft: "25%", marginBottom: "5%" }} />
         <div className="instructionsEBooks">
           <ul className="instructionsList">
             <li className="instructionsListItem">
-              <RiNumber1 style={{ margin: "10%" }} />
+              <RiNumber1 style={{ fontSize: "30px", margin: "10%", color: "teal" }} />
               <h3 style={{ margin: "5%" }}>Download de app</h3>{" "}
               <p>
                 Ga naar de
@@ -48,23 +49,24 @@ const EbooksLuisterBoeken = () => {
             </li>
             <li className="instructionsListItem">
               {" "}
-              <RiNumber2 style={{ margin: "10%" }} />
+              <RiNumber2 style={{ fontSize: "30px", margin: "10%", color: "teal" }} />
               <h3 style={{ margin: "5%" }}>Log in </h3>
-              <p>
-                Gebruik je pasnummer om in te loggen. Deze staat op je OBA-pas
-                en begint met het cijfer '22000...'. Je geboortedatum is je
+              <p> Gebruik je pasnummer om in te loggen. </p>
+              <p>Deze staat op je OBA-pas
+                en begint met het cijfer '22000...'. </p>
+                <p> Je geboortedatum is je
                 wachtwoord (ddmmjjjj).
               </p>
             </li>{" "}
             <li className="instructionsListItem">
-              <RiNumber3 style={{ margin: "10%" }} />
+              <RiNumber3 style={{ fontSize: "30px", margin: "10%", color: "teal" }} />
               <h3 style={{ margin: "5%" }}>Lezen en luisteren </h3>
               <p>Nu kun je e-books en luisterboeken uitzoeken en lenen.</p>
             </li>
           </ul>
         </div>
       </div>
-    </div>
+   
   );
 };
 

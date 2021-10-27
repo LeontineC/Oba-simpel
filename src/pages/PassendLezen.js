@@ -9,11 +9,12 @@ const PassendLezen = () => {
       className="passendLezen"
       style={{ fontSize: `${fontSize}px`, marginTop: "30vw" }}
     >
-      <div className="text">
+      <div className="textPassend">
         <h1>Passend Lezen</h1>
         <img 
         src="../../images/passendLezen.jpeg"
         alt="vrouw met koptelefoon kijkt met glimlach voor zich uit op een fluwelen fauteuil"
+        className="imgPassend"
         />
         <p>
           Je hebt geen letters nodig om te kunnen lezen. Een goed verhaal zit

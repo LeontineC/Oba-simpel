@@ -935,40 +935,40 @@ button {
           box-sizing: border-box;
 }
 
-.text {
+.textMaatje {
   margin: 20% auto 20% auto;
   text-align: center;
   padding: 0 10%;
 }
 
-.text .imgMaatje {
+.textMaatje .imgMaatje {
   width: 40vw;
   margin-bottom: 5%;
 }
 
-.text h1 {
+.textMaatje h1 {
   margin-bottom: 5%;
 }
 
-.text h2 {
+.textMaatje h2 {
   margin-bottom: 3%;
 }
 
-.text p {
+.textMaatje p {
   margin-bottom: 3%;
 }
 
-.text a {
-  color: teal;
+.textMaatje a {
+  color: #009b96;
   text-decoration: none;
 }
 
-.text a:hover {
+.textMaatje a:hover {
   text-decoration: underline;
 }
 
 @media screen and (max-width: 900px) {
-  .text .imgMaatje {
+  .textMaatje .imgMaatje {
     width: 50vw;
   }
 }
@@ -986,7 +986,7 @@ button {
 }
 
 @media screen and (max-width: 450px) {
-  .text .imgMaatje {
+  .textMaatje .imgMaatje {
     width: 90vw;
   }
 }
@@ -1000,44 +1000,48 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.text {
-  margin: 0 auto 20% auto;
+.textEBooks {
+  margin: 0 15%;
   text-align: center;
 }
 
-.text .imgEBooks {
+.textEBooks .imgEBooks {
   width: 40%;
   margin-bottom: 5%;
 }
 
-.text h1 {
+.textEBooks h1 {
   margin-bottom: 5%;
 }
 
-.text h2 {
+.textEBooks h2 {
   margin-bottom: 3%;
 }
 
-.text p {
+.textEBooks p {
   margin-bottom: 3%;
 }
 
-.text a {
+.textEBooks a {
   -webkit-text-decoration: underline #009b96;
           text-decoration: underline #009b96;
 }
 
-.text a:hover {
+.textEBooks a:hover {
   -webkit-text-decoration: underline #009b96;
           text-decoration: underline #009b96;
 }
 
 .instructionsEBooks {
   width: 85vw;
+  margin: 0 auto;
   margin-bottom: 90px;
-  border: solid lime 1px;
 }
 
 .instructionsEBooks ul {
@@ -1070,49 +1074,100 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1%;
+  padding: 3%;
 }
 
-.passendlezen {
-  margin: 0 auto 20% auto;
+@media screen and (max-width: 900px) {
+  .textRBooks .imgEBooks {
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .ebooksLuisterBoeken {
+    margin-top: 30%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .ebooksLuisterBoeken {
+    margin-top: 40%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .textEBooks .imgEBooks {
+    width: 90vw;
+  }
+}
+
+.passendLezen {
+  margin: 20% auto 20% auto;
   width: 100vw;
   height: 120vh;
 }
 
-.text {
-  margin: 0 auto 20% auto;
+.textPassend {
+  margin: 20% auto 20% auto;
   text-align: center;
   padding: 0 10%;
 }
 
-.text img {
-  width: 40%;
+.textPassend .imgPassend {
+  width: 40vw;
   margin-bottom: 5%;
 }
 
-.text h1 {
+.textPassend h1 {
   margin-bottom: 5%;
 }
 
-.text h2 {
+.textPassend h2 {
   margin-bottom: 3%;
 }
 
-.text p {
+.textPassend p {
   margin-bottom: 3%;
 }
 
-.text a {
-  -webkit-text-decoration: underline teal;
-          text-decoration: underline teal;
+.textPassend a {
+  -webkit-text-decoration: underline #009b96;
+          text-decoration: underline #009b96;
 }
 
-.text a:hover {
-  -webkit-text-decoration: underline teal dashed;
-          text-decoration: underline teal dashed;
+.textPassend a:hover {
+  -webkit-text-decoration: underline #009b96 dashed;
+          text-decoration: underline #009b96 dashed;
+}
+
+@media screen and (max-width: 900px) {
+  .textPassend .imgPassend {
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .passendLezen {
+    margin-top: 20%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .passendLezen {
+    margin-top: 60%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .textPassend .imgPassend {
+    width: 90vw;
+  }
 }
 
 .modal {

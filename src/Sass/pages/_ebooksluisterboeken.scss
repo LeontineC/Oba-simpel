@@ -4,10 +4,11 @@
   height: 160vh;
   box-sizing: border-box;
   display: flex;
+  flex-direction: column;
 }
 
-.text {
-  margin: 0 auto 20% auto;
+.textEBooks {
+  margin: 0 15%;
   text-align: center;
   .imgEBooks {
     width: 40%;
@@ -32,8 +33,9 @@
 
 .instructionsEBooks {
   width: 85vw;
+  margin: 0 auto;
   margin-bottom: 90px;
-  border: solid lime 1px;
+  
   ul {
     display: flex;
     justify-content: space-evenly;
@@ -41,7 +43,7 @@
     align-items: center;
     list-style-type: none;
     height: 40vh;
-   li {
+    li {
       width: 300px;
       height: 100%;
       margin: 2%;
@@ -49,8 +51,32 @@
       box-shadow: $box_shadow_first;
       display: flex;
       flex-direction: column;
+      justify-content: start;
       align-items: center;
-      padding: 1%;
+      padding: 3%;
     }
+  }
+}
+@media screen and (max-width: 900px) {
+  .textRBooks .imgEBooks {
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .ebooksLuisterBoeken {
+    margin-top: 30%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .ebooksLuisterBoeken {
+    margin-top: 40%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .textEBooks .imgEBooks {
+    width: 90vw;
   }
 }

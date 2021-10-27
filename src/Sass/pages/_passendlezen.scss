@@ -1,15 +1,15 @@
-.passendlezen {
-    margin: 0 auto 20% auto;
+.passendLezen {
+    margin: 20% auto 20% auto;
     width: 100vw;
     height: 120vh;
 }
 
-.text {
-    margin: 0 auto 20% auto;
+.textPassend {
+    margin: 20% auto 20% auto;
     text-align: center;
     padding: 0 10%;
-    img {
-        width: 40%;
+    .imgPassend {
+        width: 40vw;
         margin-bottom: 5%;
     }
     h1 {
@@ -22,9 +22,33 @@
         margin-bottom: 3%;
     }
     a {
-        text-decoration: underline teal;
+        text-decoration: underline $primary-color;
     }
     a:hover {
-        text-decoration: underline teal dashed;
+        text-decoration: underline $primary-color dashed;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .textPassend .imgPassend {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .passendLezen {
+        margin-top: 20%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .passendLezen {
+        margin-top: 60%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .textPassend .imgPassend {
+        width: 90vw;
     }
 }
