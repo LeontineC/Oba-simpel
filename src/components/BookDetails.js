@@ -3,7 +3,7 @@ import ReactDom from "react-dom"
 import { FaWindowClose } from "react-icons/fa"
 
 
-const BookDetails = ({ open, children, onClose, title, author, omslagafbeeldingen, publisher, language, series, description}) => {
+const BookDetails = ({ open, children, onClose, title, author, omslagafbeeldingen, publisher, language, series, description, uitgave_jaar, topicalSubjects}) => {
 
 
     if (!open) return null
@@ -24,12 +24,25 @@ const BookDetails = ({ open, children, onClose, title, author, omslagafbeeldinge
             <img src={omslagafbeeldingen} alt={"cover picture of " + title} />
             </div>
             <div className="modal_details">
-            <p> <span>Titel: </span>{title}</p>
-            <p><span>Auteur: </span>{author}</p>
-            <p><span>Uitgever: </span>{publisher}</p>
-            <p><span>Taal: </span>{language}</p>
-            <p><span>Reeks: </span>{series}</p>
-            <p><span>Beschrijving: </span>{description}</p>
+            {title ? <p><span>Titel: </span>{title}</p> : null}
+            {/* <p> <span>Titel: </span>{title}</p> */}
+            {author ? <p><span>Auteur: </span>{author}</p> : null}
+            {/* <p><span>Auteur: </span>{author}</p> */}
+            {publisher ? <p><span>Uitgever: </span>{publisher}</p> : null}
+            {/* <p><span>Uitgever: </span>{publisher}</p> */}
+            {language ? <p><span>Taal: </span>{language}</p> : null}
+            {/* <p><span>Taal: </span>{language}</p> */}
+            {series  ? <p><span>Reeks: </span>{series}</p> : null}
+            {/* <p><span>Reeks: </span>{series}</p> */}
+            {description ? <p><span>Beschrijving: </span>{description}</p> : null}
+            {/* <p><span>Beschrijving: </span>{description}</p> */}
+            {uitgave_jaar ? <p><span>uitgave jaar: </span>{uitgave_jaar}</p> : null}
+            {topicalSubjects.length > 0 ? <div><p><span>actuele onderwerpen: </span></p>{topicalSubjects.map(sub => {
+                return (
+                    <p>{sub.replaceAll(" ", "")}</p>
+                )
+            })}</div> : null}
+            
             </div>
         </div>
         </div>
