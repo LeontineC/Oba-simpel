@@ -378,6 +378,11 @@ button {
   transition: transform .5s linear, -webkit-transform .5s linear;
 }
 
+.sliderImages {
+  height: 80%;
+  width: 90%;
+}
+
 .sliderImage {
   width: 17.6vw;
   height: 60vh;
@@ -386,9 +391,16 @@ button {
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 2.6px;
           box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 2.6px;
   padding: 12.5px;
+  padding-bottom: 20px;
   background-clip: content-box;
   background-color: white;
   border-radius: 2.5%;
+  text-align: center;
+}
+
+.sliderTitle {
+  padding-top: 5%;
+  font-size: 1.3vw;
 }
 
 .arrowBtnLeft {
@@ -425,16 +437,6 @@ button {
   background: transparent;
 }
 
-/*.titleSlide {
-    position: absolute;
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    top: 80%;
-    left: 32px;
-    color: black;
-    font-weight: bold;
-}*/
 .sliderActiviteiten {
   position: relative;
   width: 100vw;
@@ -751,13 +753,12 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   margin-top: 5%;
 }
 
 .ActCal {
-  width: 30%;
-  border: fuchsia solid 1px;
+  width: 500px;
 }
 
 .ActInfo {
@@ -810,7 +811,7 @@ button {
 }
 
 .raActCal {
-  width: 10%;
+  width: 120px;
   height: 10vh;
   background-color: #009b96;
   margin: 0 5% 3% 5%;
@@ -824,18 +825,59 @@ button {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
+  .randomActCal {
+    margin-top: 25vw;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .randomActCal {
+    margin-top: 40vw;
+    padding-bottom: 30vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
   .ActCal {
-    height: 60vh;
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .ActCal {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .ActCal {
+    width: 350px;
   }
   .ActInfo img {
-    padding-top: 1vw;
+    padding-top: 2%;
   }
-  .ActInfo h3 {
-    font-size: 1.5vw;
+  .mainActCal {
+    height: 60vh;
   }
-  .ActInfo h4 {
-    font-size: 1.2vw;
+}
+
+@media screen and (max-width: 400px) {
+  .ActCal {
+    width: 300px;
+  }
+  .ActInfo {
+    margin-top: 20%;
+  }
+  .ActInfo h3,
+  h4 {
+    font-size: 1rem;
+  }
+  .mainActCal {
+    height: 55vh;
   }
 }
 

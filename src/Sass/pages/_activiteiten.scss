@@ -4,15 +4,12 @@
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   margin-top: 5%;
 }
 
 .ActCal {
-  width: 30%;
-  // height: 20px;
-  border: fuchsia solid 1px;
-  
+  width: 500px;
 }
 
 .ActInfo {
@@ -45,7 +42,7 @@
   margin-top: 15vw;
 }
 .raActCal {
-  width: 10%;
+  width: 120px;
   height: 10vh;
   background-color: $primary-color;
   margin: 0 5% 3% 5%;
@@ -58,17 +55,56 @@
   text-decoration: underline;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
+  .randomActCal {
+    margin-top: 25vw;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .randomActCal {
+    margin-top: 40vw;
+    padding-bottom: 30vw;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
   .ActCal {
-    height: 60vh;
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .ActCal {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .ActCal {
+    width: 350px;
   }
   .ActInfo img {
-    padding-top: 1vw;
+    padding-top: 2%;
   }
-  .ActInfo h3 {
-    font-size: 1.5vw;
+  .mainActCal {
+    height: 60vh;
   }
-  .ActInfo h4 {
-    font-size: 1.2vw;
+}
+
+@media screen and (max-width: 400px) {
+  .ActCal {
+    width: 300px;
+  }
+  .ActInfo {
+    margin-top: 20%;
+  }
+  .ActInfo h3,
+  h4 {
+    font-size: 1rem;
+  }
+  .mainActCal {
+    height: 55vh;
   }
 }
