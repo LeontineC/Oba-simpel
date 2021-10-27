@@ -1,5 +1,4 @@
 import React from "react";
-import DateRangeIcon from "@mui/icons-material/DateRange";
 
 function ActivitiesLoop({ activities }) {
   return (
@@ -11,25 +10,26 @@ function ActivitiesLoop({ activities }) {
               activities.map((activity) => {
                 return (
                   <>
-                   
                     <div
                       className="ActCal"
                       key={activity.id}
+                      style={{
+                        backgroundImage: "url('images/activityicon_green.svg')",
+                        backgroundPosition: "cover",
+                        backgroundRepeat: "no-repeat",
+                        height: "100%"
+                      }}
                     >
-                      <img src="images/activityicon_green.svg"
-                      alt="background agenda outline"
-                      className="activityicon"/>
-                      
-                      <div className="ActImg">
+                      <div className="ActInfo">
+                        <h3>{activity.title}</h3>
+                        <h4>{activity.tijd}</h4>
+                        <h4>{activity.datum}</h4>
+                        {/* </div> */}
+                        {/* <div className="ActImg" > */}
                         <img
                           src={activity.omslagafbeeldingen[0]}
                           alt={activity.title}
                         ></img>
-                      </div>
-                      <div className="ActInfo">
-                        <p>{activity.title}</p>
-                        <p>{activity.tijd}</p>
-                        <p>{activity.datum}</p>
                       </div>
                     </div>
                   </>

@@ -7,15 +7,9 @@ html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockq
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
   font-family: sans-serif;
   vertical-align: baseline;
   text-rendering: optimizeLegibility;
-  -webkit-text-size-adjust: none;
-     -moz-text-size-adjust: none;
-      -ms-text-size-adjust: none;
-          text-size-adjust: none;
 }
 
 footer, header, nav, section, main {
@@ -68,37 +62,36 @@ img {
   font-family: 'Poppins', sans-serif;
 }
 
-h1 {
-  font-size: 4rem;
-  font-weight: 900;
-}
-
-h2 {
-  font-size: 3.125rem;
-  font-weight: 500;
-}
-
-h3 {
-  font-size: 2.75rem;
-  font-weight: 500;
-}
-
-h4 {
-  font-size: 2.25rem;
-  font-weight: 500;
-}
-
-h5 {
-  font-size: 1.625rem;
-  font-weight: 400;
-}
-
-p {
-  font-size: 1.188rem;
-  font-weight: 200;
-  line-height: 1.5;
-}
-
+/*h1 {
+    font-size: 4rem; 
+    font-weight: 900;
+ }
+ 
+ h2 {
+     font-size: 3.125rem;
+     font-weight: 500;
+ }
+ 
+ h3 {
+     font-size: 2.75rem;
+     font-weight: 500;
+ }
+ 
+ h4 {
+    font-size: 2.25rem; 
+    font-weight: 500;
+ }
+ 
+ h5 {
+     font-size: 1.625rem;
+     font-weight: 400;
+ }
+ 
+ p {
+     font-size: 1.188rem;
+     font-weight: 200;
+     line-height: 1.5;
+ } */
 button {
   font-size: 1rem;
   font-weight: 100;
@@ -231,7 +224,7 @@ button {
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
-  color: teal;
+  color: #009b96;
   font-size: 1.5vw;
   margin-left: 2vw;
 }
@@ -386,14 +379,13 @@ button {
 }
 
 .sliderImage {
-  width: 17.5vw;
+  width: 17.6vw;
   height: 60vh;
   margin-right: 1.5vw;
   border: solid 4px #009b96;
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 2.6px;
           box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 2.6px;
   padding: 12.5px;
-  padding-bottom: 90px;
   background-clip: content-box;
   background-color: white;
   border-radius: 2.5%;
@@ -433,20 +425,16 @@ button {
   background: transparent;
 }
 
-.titleSlide {
-  position: absolute;
-  width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  top: 80%;
-  left: 32px;
-  color: black;
-  font-weight: bold;
-}
-
+/*.titleSlide {
+    position: absolute;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    top: 80%;
+    left: 32px;
+    color: black;
+    font-weight: bold;
+}*/
 .sliderActiviteiten {
   position: relative;
   width: 100vw;
@@ -705,60 +693,17 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 50%;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 5%;
 }
 
-/*.ActCal {
-  width: 200px;
-  height: 250px;
-  position: relative; //
-  
-  background-color: rgb(0, 155, 150);
-  margin: 30px;
-  border: 3px solid rgb(0, 155, 150);
-  font-size: 1.3rem;
-  color: rgb(0, 155, 150);
-  border-radius: 2%;
-  overflow: hidden;
-} */
 .ActCal {
-  position: relative;
   width: 30%;
-}
-
-.activityicon {
-  width: 170%;
-}
-
-/*.ActCal:hover {
-  border-color: rgb(1, 117, 113);
-  color: rgb(1, 117, 113);
-}*/
-/*.ActCal p {
-  position: absolute;
-  top: 20%;
-  left: 20%;
-  width: 90%;
-  margin: 5px auto;
-  // font-size: 1rem;
-} */
-.ActImg {
-  /* height: 75px; */
-  position: absolute;
-  top: 45%;
-  left: 10%;
-  width: 80%;
-}
-
-.ActImg img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  max-height: 200px;
+  border: fuchsia solid 1px;
 }
 
 .ActInfo {
-  background-color: Rgb(0, 155, 150);
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -773,9 +718,22 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: absolute;
-  top: 20%;
-  left: 25%;
+  margin-top: 22%;
+}
+
+.ActInfo h3,
+.ActInfo h4 {
+  padding-bottom: 1.5%;
+}
+
+.ActInfo h3:hover {
+  text-decoration: underline;
+}
+
+.ActInfo img {
+  width: 70%;
+  height: 60%;
+  padding-top: 6%;
 }
 
 .randomActCal {
@@ -784,24 +742,48 @@ button {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-bottom: 2px solid #009b96;
+  margin-top: 15vw;
 }
 
 .raActCal {
-  width: 150px;
-  height: 30px;
+  width: 10%;
+  height: 10vh;
   background-color: #009b96;
-  margin: 30px;
+  margin: 0 5% 3% 5%;
   border: 3px solid #009b96;
   font-size: 1rem;
   color: white;
-  border-radius: 2%;
+  border-radius: 5%;
 }
 
-/* Rgb(0, 155, 150) */
-/* Rgb(150, 150, 150) */
+.raActCal:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1200px) {
+  .ActCal {
+    height: 60vh;
+  }
+  .ActInfo img {
+    padding-top: 1vw;
+  }
+  .ActInfo h3 {
+    font-size: 1.5vw;
+  }
+  .ActInfo h4 {
+    font-size: 1.2vw;
+  }
+}
+
 .maatje {
-  margin: 0 auto 20% auto;
+  margin: 20% auto 30% auto;
   width: 100vw;
   height: 120vh;
   -webkit-box-sizing: border-box;
@@ -1032,7 +1014,7 @@ button {
 
 .modal .modal_display .modal_details {
   font-size: 1.5vw;
-  width: 60%;
+  width: 40vw;
   line-height: 1.3;
 }
 

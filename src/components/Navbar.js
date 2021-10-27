@@ -93,7 +93,7 @@ const Navbar = () => {
             </li>
             <li className="btnsRight">
               <a href="https://www.oba.nl/" style={{color: "teal"}}>
-                <ExitToAppIcon style={{ color: "teal", fontSize: "2vw" }} />
+                <ExitToAppIcon style={{ fontSize: "2vw" }} />
                 naar OBA.nl
               </a>
             </li>
