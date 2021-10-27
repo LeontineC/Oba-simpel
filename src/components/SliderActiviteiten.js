@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ArrowLeftIcon from "@material-ui/icons/ArrowLeft";
 import ArrowRightIcon from "@material-ui/icons/ArrowRight";
+import Activity from "../components/Activity"
 
 const SliderActiviteiten = ({ data }) => {
   const [current, setCurrent] = useState(0);
@@ -8,7 +9,7 @@ const SliderActiviteiten = ({ data }) => {
   if (data.length > 7) data.length = 7;
   const length = data.length;
 
- 
+
 
   const currentIndex = (current) => {
     if (current > length - 1) {
@@ -54,22 +55,26 @@ const SliderActiviteiten = ({ data }) => {
         <div className="wrapperActiviteiten">
           {currentIndex(current).map((index, position) => {
             const slide = data[index];
+            const day = new Date(slide.datum)
+            const dayFormat =  day.toLocaleString('nl', { weekday: 'short' }) + ' ' + day.getDate() + ' ' + day.toLocaleString('nl', { month: 'short' })
             return (
               <div
                 className={index === current ? "slideA active" : "slideA"}
                 key={index}
                 style={{ transform: `translateX(${(position - 1) * 100}%)` }}
               >
-                <img
-                  src={slide.omslagafbeeldingen[0]}
-                  alt=""
-                  className="sliderImageActiviteiten"
+                <Activity key={slide.id}
+                  title={slide.title}
+                  datum={dayFormat}
+                  tijd={slide.tijd}
+                  omslagafbeeldingen={slide.omslagafbeeldingen[0]}
+                  author={slide.auteurs}
+                  publisher={slide.uitgever}
+                  language={slide.taal}
+                  series={slide.series}
+                  description={slide.beschrijving}
+                  location={slide.locatie}
                 />
-                <div className="overlayActiviteiten">
-                  <h4>{slide.datum}</h4>
-                  <h5>{slide.tijd}</h5>
-                  <h4>{slide.title}</h4>
-                </div>
               </div>
             );
           })}
