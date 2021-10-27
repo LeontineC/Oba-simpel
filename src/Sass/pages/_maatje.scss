@@ -9,8 +9,8 @@
     margin: 20% auto 20% auto;
     text-align: center;
     padding: 0 10%;
-    img {
-        width: 40%;
+    .imgMaatje {
+        width: 40vw;
         margin-bottom: 5%;
     }
     h1 {
@@ -31,3 +31,26 @@
     }
 }
 
+@media screen and (max-width: 900px) {
+    .text .imgMaatje {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .maatje {
+        margin-top: 30%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .maatje {
+        margin-top: 40%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .text .imgMaatje {
+        width: 90vw;
+    }
+}

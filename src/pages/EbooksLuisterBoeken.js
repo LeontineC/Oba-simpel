@@ -12,6 +12,7 @@ const EbooksLuisterBoeken = () => {
         <img
           src="https://www.oba.nl/dam/0420_luisterboeken.jpg.rendition.792.1267.jpeg"
           alt="man met koptelefoon zit buiten naar een luisterboek te luisteren"
+          className="imgEBooks"
         />
         <p>
           Als lid van de OBA heb je toegang tot duizenden e-books en

@@ -11,6 +11,7 @@ const Maatje = () => {
         <img
           src="https://www.oba.nl/dam/nieuws/0418_oba-maatje_mauritsdame.jpg.rendition.384.614.jpeg"
           alt="vrouw en vrijwilliger kijken samen naar een boek in een woonkamer"
+          className="imgMaatje"
         />
         <p>
           Zou u het fijn vinden om iedere maand een eigen vertrouwde

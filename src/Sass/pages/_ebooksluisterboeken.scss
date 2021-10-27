@@ -1,7 +1,7 @@
 .ebooksLuisterBoeken {
-  margin: 0 auto 30% auto;
+  margin: 20% auto 30% auto;
   width: 100vw;
-  height: 150vh;
+  height: 160vh;
   box-sizing: border-box;
   display: flex;
 }
@@ -9,7 +9,7 @@
 .text {
   margin: 0 auto 20% auto;
   text-align: center;
-  img {
+  .imgEBooks {
     width: 40%;
     margin-bottom: 5%;
   }
@@ -23,28 +23,29 @@
     margin-bottom: 3%;
   }
   a {
-    text-decoration: underline teal dashed;
+    text-decoration: underline $primary-color;
   }
   a:hover {
-    text-decoration: underline teal;
+    text-decoration: underline $primary-color;
   }
 }
 
 .instructionsEBooks {
-  width: 100%;
-  margin-bottom: 100px;
+  width: 85vw;
+  margin-bottom: 90px;
   border: solid lime 1px;
   ul {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     align-items: center;
     list-style-type: none;
-    height: 50vh;
-    li {
-      width: 80%;
+    height: 40vh;
+   li {
+      width: 300px;
       height: 100%;
       margin: 2%;
-      border: solid teal 2px;
+      border: solid $primary-color 2px;
       box-shadow: $box_shadow_first;
       display: flex;
       flex-direction: column;

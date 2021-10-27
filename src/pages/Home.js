@@ -7,15 +7,18 @@ import EventIcon from "@material-ui/icons/Event";
 import { MdLightbulbOutline } from "react-icons/md";
 import {FontContext} from '../components/FontContext';
 
+
 const Home = () => {
   const [sliderData, setSliderData] = useState();
   const [activiteitenData, setActiviteitenData] = useState();
   const [fontSize] = useContext(FontContext);
 
   useEffect(() => {
+    
     fetch(`https://techgrounds-oba.herokuapp.com/api/oba/techgrounds/boeken/`)
       .then((response) => response.json())
       .then((newData) => {
+        
         console.log(newData);
         setSliderData(newData);
       });

@@ -7,7 +7,7 @@ const Activity = ( {location, datum, tijd, title, omslagafbeeldingen, author, pu
     return (
 
         <article >
-            <button onClick={() => setIsOpen(true)}> <img className="sliderImageActiviteiten"
+            <button className="activitySliderButton" onClick={() => setIsOpen(true)}> <img className="sliderImageActiviteiten"
 src={omslagafbeeldingen} alt={"cover picture of " + title} /> 
             <div className="overlayActiviteiten">
                   <h4>{datum}</h4>

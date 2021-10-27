@@ -1,73 +1,79 @@
 .sliderActiviteiten {
-    position: relative;
-    width: 100vw;
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10%;
+  position: relative;
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .arrowLeft {
-    position: absolute;
-    top: 120%;
-    left: -2%;
-    color: $primary-color;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
-    border: none;
-    background: transparent;
+  position: absolute;
+  top: 120%;
+  left: -2%;
+  color: $primary-color;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+  background: transparent;
 }
 
 .arrowRight {
-    position: absolute;
-    top: 120%;
-    right: -2%;
-    color: $primary-color;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
-    border: none;
-    background: transparent;
+  position: absolute;
+  top: 120%;
+  right: -2%;
+  color: $primary-color;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+  background: transparent;
 }
 
 .wrapperActiviteiten {
-    position: relative;
-    width: 78%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
+  position: relative;
+  width: 78%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
 
 .slideA {
-    position: absolute;
-    left: 0;
-    transition: transform .5s linear;
+  position: absolute;
+  left: 0;
+  transition: transform 0.5s linear;
 }
 
 .sliderImageActiviteiten {
-    width: 25.5vw;
-    height: 45vh;
-    padding: .5vw;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-    // box-shadow: $box_shadow_first;
-    margin: .2vw;
+  width: 24.8vw;
+  height: 45vh;
+  padding: 0.5vw;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  // box-shadow: $box_shadow_first;
+  margin: 0.2vw;
 }
 
 .overlayActiviteiten {
-    position: absolute;
-    width: 99%;
-    height: 65%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    top: 32.5%;
-    left: .9%;
-    color: white;
-    font-weight: bold;
-    background-color: rgba(0, 155, 150, 0.5);
+  position: absolute;
+  width: 96%;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  top: 32.5%;
+  left: 2%;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(0, 155, 150, 0.5);
 }
 
+.activitySliderButton {
+  outline: none;
+  border: none;
+  background: transparent;
+}

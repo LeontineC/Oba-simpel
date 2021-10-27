@@ -450,7 +450,6 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 10%;
 }
 
 .arrowLeft {
@@ -499,24 +498,24 @@ button {
 .slideA {
   position: absolute;
   left: 0;
-  -webkit-transition: -webkit-transform .5s linear;
-  transition: -webkit-transform .5s linear;
-  transition: transform .5s linear;
-  transition: transform .5s linear, -webkit-transform .5s linear;
+  -webkit-transition: -webkit-transform 0.5s linear;
+  transition: -webkit-transform 0.5s linear;
+  transition: transform 0.5s linear;
+  transition: transform 0.5s linear, -webkit-transform 0.5s linear;
 }
 
 .sliderImageActiviteiten {
-  width: 25.5vw;
+  width: 24.8vw;
   height: 45vh;
-  padding: .5vw;
+  padding: 0.5vw;
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
           box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-  margin: .2vw;
+  margin: 0.2vw;
 }
 
 .overlayActiviteiten {
   position: absolute;
-  width: 99%;
+  width: 96%;
   height: 65%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -532,10 +531,16 @@ button {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   top: 32.5%;
-  left: .9%;
+  left: 2%;
   color: white;
   font-weight: bold;
   background-color: rgba(0, 155, 150, 0.5);
+}
+
+.activitySliderButton {
+  outline: none;
+  border: none;
+  background: transparent;
 }
 
 .containerTips {
@@ -895,8 +900,8 @@ button {
   padding: 0 10%;
 }
 
-.text img {
-  width: 40%;
+.text .imgMaatje {
+  width: 40vw;
   margin-bottom: 5%;
 }
 
@@ -921,10 +926,34 @@ button {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 900px) {
+  .text .imgMaatje {
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .maatje {
+    margin-top: 30%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .maatje {
+    margin-top: 40%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .text .imgMaatje {
+    width: 90vw;
+  }
+}
+
 .ebooksLuisterBoeken {
-  margin: 0 auto 30% auto;
+  margin: 20% auto 30% auto;
   width: 100vw;
-  height: 150vh;
+  height: 160vh;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -937,7 +966,7 @@ button {
   text-align: center;
 }
 
-.text img {
+.text .imgEBooks {
   width: 40%;
   margin-bottom: 5%;
 }
@@ -955,18 +984,18 @@ button {
 }
 
 .text a {
-  -webkit-text-decoration: underline teal dashed;
-          text-decoration: underline teal dashed;
+  -webkit-text-decoration: underline #009b96;
+          text-decoration: underline #009b96;
 }
 
 .text a:hover {
-  -webkit-text-decoration: underline teal;
-          text-decoration: underline teal;
+  -webkit-text-decoration: underline #009b96;
+          text-decoration: underline #009b96;
 }
 
 .instructionsEBooks {
-  width: 100%;
-  margin-bottom: 100px;
+  width: 85vw;
+  margin-bottom: 90px;
   border: solid lime 1px;
 }
 
@@ -977,18 +1006,20 @@ button {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   list-style-type: none;
-  height: 50vh;
+  height: 40vh;
 }
 
 .instructionsEBooks ul li {
-  width: 80%;
+  width: 300px;
   height: 100%;
   margin: 2%;
-  border: solid teal 2px;
+  border: solid #009b96 2px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: -webkit-box;
