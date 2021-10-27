@@ -1,7 +1,7 @@
 import { useState } from "react"
 import BookDetails from "./BookDetails"
 
-const Book = ({ title, omslagafbeeldingen, author, publisher, language, series, description }) => {
+const Book = ({ title, omslagafbeeldingen, author, publisher, language, series, description, publishYear, topicalSubjects }) => {
 
     const [isOpen, setIsOpen] = useState(false)
     return (
@@ -19,7 +19,10 @@ const Book = ({ title, omslagafbeeldingen, author, publisher, language, series, 
             language={language}
             series={series}
             description={description}
+            topicalSubjects={topicalSubjects}
+            publishYear={publishYear}
             open={isOpen} onClose={() => setIsOpen(false)}>
+            
             </BookDetails>
         </article>
     )

@@ -720,22 +720,63 @@ button {
   font-size: 1.5rem;
 }
 
-.div-genreFilterBtn .inputDiv button {
+.genreFilterBtn {
   width: 160px;
-  height: 65px;
+  height: 55px;
   background-color: #017571;
   margin: 0 auto;
   color: antiquewhite;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+
+.inputDiv {
+  width: 90%;
+  margin: -200px auto;
+  text-align: center;
+}
+
+.inputDiv .genreFilterBtn {
+  width: 160px;
+  height: 55px;
+  background-color: #017571;
+  margin: 0 auto;
+  color: antiquewhite;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+
+.inputDiv input {
+  height: 55px;
+  width: 600px;
+  margin: 0 auto;
+  border: 5px solid #017571;
+  border-radius: 10px;
   font-size: 1.5rem;
 }
 
-.genreFilterBtn {
+.previousBtn {
   width: 160px;
-  height: 65px;
+  height: 55px;
   background-color: #017571;
   margin: 0 auto;
   color: antiquewhite;
   font-size: 1.5rem;
+  border-radius: 10px;
+}
+
+.nextBtn {
+  width: 160px;
+  height: 55px;
+  background-color: #017571;
+  margin: 0 auto;
+  color: antiquewhite;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+
+.previousBtn:disabled {
+  background-color: rgba(0, 56, 53, 0.397);
 }
 
 .mainActCal {
