@@ -648,6 +648,20 @@ button {
   gap: 5vw;
 }
 
+.result_card h2 {
+  color: #009b96;
+  margin: 0 auto;
+}
+
+.result_card div button {
+  width: 160px;
+  height: 65px;
+  background-color: #017571;
+  margin: 0 auto;
+  color: antiquewhite;
+  font-size: 1.5rem;
+}
+
 .result_card article {
   padding: 2vw;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -679,6 +693,49 @@ button {
   min-width: 100px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.div-genreFilterBtn {
+  width: 90%;
+  margin: 250px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.div-genreFilterBtn button {
+  width: 160px;
+  height: 65px;
+  background-color: #017571;
+  margin: 0 auto;
+  color: antiquewhite;
+  font-size: 1.5rem;
+}
+
+.div-genreFilterBtn .inputDiv button {
+  width: 160px;
+  height: 65px;
+  background-color: #017571;
+  margin: 0 auto;
+  color: antiquewhite;
+  font-size: 1.5rem;
+}
+
+.genreFilterBtn {
+  width: 160px;
+  height: 65px;
+  background-color: #017571;
+  margin: 0 auto;
+  color: antiquewhite;
+  font-size: 1.5rem;
 }
 
 .mainActCal {
