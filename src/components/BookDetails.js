@@ -36,12 +36,7 @@ const BookDetails = ({ open, children, onClose, title, author, omslagafbeeldinge
             {/* <p><span>Reeks: </span>{series}</p> */}
             {description ? <p><span>Beschrijving: </span>{description}</p> : null}
             {/* <p><span>Beschrijving: </span>{description}</p> */}
-            {publishYear ? <p><span>uitgave jaar: </span>{publishYear}</p> : null}
-            {topicalSubjects.length > 0 ? <div><p><span>actuele onderwerpen: </span></p>{topicalSubjects.map(sub => {
-                return (
-                    <p>{sub}</p>
-                )
-            })}</div> : null}
+
             
             </div>
         </div>
