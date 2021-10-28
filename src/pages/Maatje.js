@@ -6,7 +6,7 @@ const Maatje = () => {
 
   return (
     <div className="maatje" style={{ fontSize: `${fontSize}px` }}>
-      <div className="text">
+      <div className="textMaatje">
         <h1>Iedere maand een stapel favoriete boeken, cd’s of films thuis?</h1>
         <img
           src="https://www.oba.nl/dam/nieuws/0418_oba-maatje_mauritsdame.jpg.rendition.384.614.jpeg"
