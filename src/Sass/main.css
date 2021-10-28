@@ -1361,7 +1361,37 @@ a:hover {
 }
 
 .modal_image {
-  height: 20vw !important;
-  width: 20vw !important;
+  height: 12vw !important;
+  width: 15vw !important;
+  margin-top: 10vh;
+}
+
+.activity_modal {
+  width: 47vw !important;
+}
+
+h4, h5 {
+  line-height: 1.2;
+}
+
+.register {
+  font-weight: bold;
+}
+
+.register_button {
+  background-color: #009b96;
+  color: whitesmoke;
+  font-size: large;
+  border-radius: 5px;
+  padding: 0.5vw 2vw;
+  outline: none;
+  border: none;
+  text-align: center;
+  margin: 0.5vw 15vw;
+  font-weight: bold;
+}
+
+.italics {
+  font-style: italic;
 }
 /*# sourceMappingURL=main.css.map */
