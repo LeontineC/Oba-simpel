@@ -14,6 +14,7 @@ const Boeken = () => {
     const [checked, setChecked] = useState("random/")
     const [ad, setAd] = useState('')
     const [searchValue, setSearchValue] = useState('')
+    const [count, setCount] = useState()
 
     useEffect(() => {
         getBooks()
@@ -30,6 +31,7 @@ const Boeken = () => {
             .then(results => {
                 setLoading(false)
                 setBooksList(results.boeken)
+                setCount(results.meta.count / 20)
             })
     }
     const nextPage = () => {
@@ -61,55 +63,55 @@ const Boeken = () => {
     return (
         <>
 
-            <div className="div-genreFilterBtn">
-                <button onClick={defineGenre} style={checked === "random/" ? { backgroundColor: "red" } : null} className="genreFilterBtn" name="random/">willekeurig</button>
-                <button onClick={defineGenre} style={checked === "largetype/" ? { backgroundColor: "red" } : null} className="genreFilterBtn" name="largetype/">grote letters </button>
-                <button onClick={defineGenre} style={checked === "audiobook/" ? { backgroundColor: "red" } : null} className="genreFilterBtn" name="audiobook/">audio boeken</button>
-                <button onClick={defineGenre} style={checked === "dvdvideo/" ? { backgroundColor: "red" } : null} className="genreFilterBtn" name="dvdvideo/">dvdvideo</button>
-                <button onClick={defineGenre} style={checked === "book/" ? { backgroundColor: "red" } : null} className="genreFilterBtn" name="book/">boeken</button>
-                <button onClick={defineGenre} style={checked === "ebook/" ? { backgroundColor: "red" } : null} className="genreFilterBtn" name="ebook/">e-boek</button>
+            <div className="inputDiv" >
+                <input className="inputBooksPage" placeholder="Waar ben je naar op zoek?" onChange={onchange} value={searchValue}></input>
+                <button className="zoekFilterBtn" onClick={onzoek}>Zoek</button>
             </div>
 
-            <div className="inputDiv" >
-                <input className="inputBooksPage" onChange={onchange} value={searchValue}></input>
-                <button className="genreFilterBtn" onClick={onzoek}>Zoek</button>
+            <div className="div-genreFilterBtn">
+                <button onClick={defineGenre} style={checked === "random/" ? { backgroundColor: "gray", textDecoration: "underline" } : null} className="typeFilterBtn" name="random/">willekeurig</button>
+                <button onClick={defineGenre} style={checked === "largetype/" ? { backgroundColor: "gray", textDecoration: "underline" } : null} className="typeFilterBtn" name="largetype/">grote letters </button>
+                <button onClick={defineGenre} style={checked === "audiobook/" ? { backgroundColor: "gray", textDecoration: "underline" } : null} className="typeFilterBtn" name="audiobook/">audio boeken</button>
+                <button onClick={defineGenre} style={checked === "dvdvideo/" ? { backgroundColor: "gray", textDecoration: "underline" } : null} className="typeFilterBtn" name="dvdvideo/">dvdvideo</button>
+                <button onClick={defineGenre} style={checked === "book/" ? { backgroundColor: "gray", textDecoration: "underline" } : null} className="typeFilterBtn" name="book/">boeken</button>
+                <button onClick={defineGenre} style={checked === "ebook/" ? { backgroundColor: "gray", textDecoration: "underline" } : null} className="typeFilterBtn" name="ebook/">e-boek</button>
             </div>
+
+
 
             {booksList && booksList && <GenreBookFilter books={booksList} searchValue={searchValue} setSearchValue={setSearchValue} ad={ad} setAd={setAd} genreName={genreName} setGenreName={setGenreName} filteredBooks={filteredBooks} setFilteredBooks={setFilteredBooks} />}
 
 
-            <section className="search_results">
+            <section >
                 {loading === false ?
-                    <div>
+                    <div >
                         {filteredBooks && filteredBooks.length > 0 ?
-                            <div className="result_card">
-                                {booksList.length > 0 ? <div>
-                                    <button className="previousBtn" disabled={pageNumb == 1 ? true : false} onClick={previousPage}>vorige pagina</button><h3>{filteredBooks && filteredBooks.length}</h3><button className="nextBtn" onClick={nextPage}>volgende pagina</button></div> : null}
-
-
+                            <div className="search_results">
+                                
                                 {filteredBooks && filteredBooks.map(({ id, title, omslagafbeeldingen, auteurs, uitgever, taal, series, beschrijving, uitgave_jaar, topical_subjects }) => (
                                     <Book key={id}
                                         title={title}
                                         omslagafbeeldingen={omslagafbeeldingen[1]}
-                                        author={auteurs}
+                                        autho                                        language={taal}
+                                        series={series}r={auteurs}
                                         publisher={uitgever}
-                                        language={taal}
-                                        series={series}
+
                                         description={beschrijving}
                                         publishYear={uitgave_jaar}
                                         topicalSubjects={topical_subjects}
                                     />)
                                 )}
-
+                                
+                            {booksList.length > 0 ? <div div className="pages">
+                                    <button className="nextPreviousBtn" disabled={pageNumb == 1 ? true : false} onClick={previousPage}>vorige pagina</button><h2>{booksList.length == 0 ? <h2>Geen Resultaten</h2> : null}</h2><button disabled={count > pageNumb ? true : false} className="nextPreviousBtn" onClick={nextPage}>volgende pagina</button></div> : null}
                             </div>
                             :
-                            <div className="result_card">
-                                {booksList ? <div>
-                                    <button className="previousBtn" disabled={pageNumb == 1 ? true : false} onClick={previousPage}>vorige pagina</button><h3>{booksList && booksList.length}</h3><button className="nextBtn" onClick={nextPage}>volgende pagina</button></div> : null}
+                            <div className="search_results">
+                                
 
 
                                 {booksList && booksList.map(({ id, title, omslagafbeeldingen, auteurs, uitgever, taal, series, beschrijving, uitgave_jaar, topical_subjects }) => (
-                                    
+
                                     <Book key={id}
                                         title={title}
                                         omslagafbeeldingen={omslagafbeeldingen[1]}
@@ -121,9 +123,11 @@ const Boeken = () => {
                                         publishYear={uitgave_jaar}
                                         topicalSubjects={topical_subjects}
                                     />)
-                                    
-                                )}
 
+                                )}
+                                
+                                {booksList ? <div className="pages">
+                                    <button className="nextPreviousBtn" disabled={pageNumb == 1 ? true : false} onClick={previousPage}>vorige pagina</button><h2>{booksList.length == 0 ? <h2>Geen Resultaten</h2> : null}</h2><button disabled={count < pageNumb ? true : false} className="nextPreviousBtn" onClick={nextPage}>volgende pagina</button></div> : null}
                             </div>
                         }
                     </div>

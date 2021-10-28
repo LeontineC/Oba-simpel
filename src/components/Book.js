@@ -9,6 +9,8 @@ const Book = ({
   language,
   series,
   description,
+  publishYear,
+  topicalSubjects
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -27,6 +29,8 @@ const Book = ({
         language={language}
         series={series}
         description={description}
+        publishYear={publishYear}
+        topicalSubjects={topicalSubjects}
         open={isOpen}
         onClose={() => setIsOpen(false)}
       ></BookDetails>

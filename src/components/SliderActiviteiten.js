@@ -72,10 +72,6 @@ const SliderActiviteiten = ({ data }) => {
                   datum={dayFormat}
                   tijd={slide.tijd}
                   omslagafbeeldingen={slide.omslagafbeeldingen[0]}
-                  author={slide.auteurs}
-                  publisher={slide.uitgever}
-                  language={slide.taal}
-                  series={slide.series}
                   description={slide.beschrijving}
                   location={slide.locatie}
                 />

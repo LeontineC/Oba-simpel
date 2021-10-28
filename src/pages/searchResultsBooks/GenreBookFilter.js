@@ -35,23 +35,29 @@ const GenreBookFilter = ({ books, setFilteredBooks, setGenreName, genreName, ad,
         else
             setAd(e.target.name + '/')
     }
+    const onBack = () => {
+        setAd("")
+    }
 
     return (
+        <div>
         <div className="div-genreFilterBtn">
             {ad == '' ?
                 <div>
                     {genres && genres.map(genre => {
                         return (
-
-
                             <button onClick={booksFilter} className="genreFilterBtn" name={genre}>{genre === "" ? "Anders" : genre}</button>
-
                         )
                     })}
                 </div>
 
                 :
-                <button style={{backgroundColor: "red"}} className='genreFilterBtn'  disabled={true}>{ad}</button>   }     
+                <div>
+                    <button onClick={onBack} className='genreFilterBtn' >terug</button>
+                    <button style={{backgroundColor: "gray", textDecoration: "underline"}} className='genreFilterBtn'  disabled={true}>{ad.slice(0, ad.length-1)}</button>
+                </div>
+                   }     
+        </div>
         </div>
     )
 

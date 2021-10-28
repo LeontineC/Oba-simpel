@@ -3,7 +3,7 @@ import ReactDom from "react-dom"
 import { FaWindowClose } from "react-icons/fa"
 
 
-const BookDetails = ({ open, children, onClose, title, author, omslagafbeeldingen, publisher, language, series, description, uitgave_jaar, topicalSubjects}) => {
+const BookDetails = ({ open, children, onClose, title, author, omslagafbeeldingen, publisher, language, series, description, publishYear, topicalSubjects}) => {
 
 
     if (!open) return null
@@ -36,12 +36,7 @@ const BookDetails = ({ open, children, onClose, title, author, omslagafbeeldinge
             {/* <p><span>Reeks: </span>{series}</p> */}
             {description ? <p><span>Beschrijving: </span>{description}</p> : null}
             {/* <p><span>Beschrijving: </span>{description}</p> */}
-            {uitgave_jaar ? <p><span>uitgave jaar: </span>{uitgave_jaar}</p> : null}
-            {topicalSubjects.length > 0 ? <div><p><span>actuele onderwerpen: </span></p>{topicalSubjects.map(sub => {
-                return (
-                    <p>{sub.replaceAll(" ", "")}</p>
-                )
-            })}</div> : null}
+
             
             </div>
         </div>

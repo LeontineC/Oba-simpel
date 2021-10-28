@@ -1,132 +1,196 @@
 .search_results {
     margin: 5vh auto;
-}
-
-.result_card {
-    display: flex;
-    flex-wrap:wrap;
-    max-width: 100vw;
+    display:flex;
+    width: 90vw;
+    flex-wrap: wrap;
+    overflow: hidden;
     justify-content: center;
-    gap: 5vw;
-    h2 {
-        color: rgb(0, 155, 150);
-        margin: 0 auto;
-    }
-    div {
-        button {
-            width: 160px;
-        height: 65px;
-        background-color: rgb(1, 117, 113);
-        margin: 0 auto;
-        color: antiquewhite;
-        font-size: 1.5rem;
-        }
-    }
-
-    article {
-        padding: 2vw;
-        box-shadow: $box_shadow_first;
-        min-width: 200px;
-    }
-
-    
-
-    h3 {
-        width: 20vw;
-        text-align: center;
-        height: 8vh;
-        color:$primary-color;
-        margin-top:0;
-    }
-
-    button {
-        display: block;
-        margin: 0 auto;
-        border: none;
-        
-
-        img {
-            width: 10vw;
-            height: 30vh;
-            object-fit: cover;
-            padding:0;
-            margin:0 auto;
-            min-width:100px;
-            box-shadow: $box_shadow_first;
-        }
-        
-    }
-    
+    align-items: center;
+    align-content: space-around;
+    gap: 40px;
 }
+
+
+// .result_card {
+
+//     h2 {
+//         color: rgb(0, 155, 150);
+//         margin: 0 auto;
+//     }
+//     div {
+//         button {
+//         width: 160px;
+//         height: 65px;
+//         background-color: rgb(1, 117, 113);
+//         margin: 0 auto;
+//         color: antiquewhite;
+//         font-size: 1.5rem;
+//         }
+//     }
+
+//     article {
+//         padding: 2vw;
+//         box-shadow: $box_shadow_first;
+//         min-width: 200px;
+//     }
+
+//     h3 {
+//         width: 20vw;
+//         text-align: center;
+//         height: 8vh;
+//         color:$primary-color;
+//         margin-top:0;
+//     }
+
+//     button {
+//         display: block;
+//         margin: 0 auto;
+//         border: none;
+        
+
+//         img {
+//             width: 10vw;
+//             height: 30vh;
+//             object-fit: cover;
+//             padding:0;
+//             margin:0 auto;
+//             min-width:100px;
+//             box-shadow: $box_shadow_first;
+//         }
+        
+//     }
+    
+// }
 .div-genreFilterBtn{
     width: 90%;
-    margin: 250px auto;
+    margin: 20px auto;
     display: flex;
     align-items: center;
-    flex: 1 1 auto;
     flex-wrap: wrap;
-    button{
-        width: 160px;
-        height: 65px;
-        background-color: rgb(1, 117, 113);
-        margin: 0 auto;
-        color: antiquewhite;
-        font-size: 1.5rem;
-    }
-    
-
+    align-items: center;
+}
+.typeFilterBtn {
+    width: 140px;
+    height: 50px;
+    background-color: rgb(1, 117, 113);
+    color: antiquewhite;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    margin: 1%;
+    padding: 0% 1% 0% 1%;
 }
 .genreFilterBtn {
-    width: 160px;
-        height: 55px;
-        background-color: rgb(1, 117, 113);
-        margin: 0 auto;
-        color: antiquewhite;
-        font-size: 1.2rem;
-        border-radius: 10px;
+    height: 60px;
+    background-color: rgb(1, 117, 113);
+    margin: 1%;
+    color: antiquewhite;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    padding: 0% 2% 0% 2%;
+    // margin: 5px;
+}
+.zoekFilterBtn{
+    width: 155px;
+    height: 40px;
+    background-color: rgb(1, 117, 113);
+    margin: 0 auto;
+    color: antiquewhite;
+    font-size: 2rem;
+    border-radius: 5px;
+    border: none;
+    // margin: 5px 5px;
+}
+.inputBooksPage{
+    height: 55px;
+    // display: inline;
+    width: 50vw;
+    margin: 0 70px;
+    border: 1px solid gray;
+    background-color: rgba(196, 196, 196, 0.548);
+    border-radius: 50px;
+    font-size: 1.5rem;
 }
 .inputDiv {
-    width: 90%;
-    margin: -200px auto;
-    text-align: center;
-    .genreFilterBtn{
-        width: 160px;
-        height: 55px;
-        background-color: rgb(1, 117, 113);
-        margin: 0 auto;
-        color: antiquewhite;
-        font-size: 1.5rem;
-        border-radius: 10px;
-    }
-    input{
-        height: 55px;
-        // display: inline;
-        width: 600px;
-        margin: 0 auto;
-        border: 5px solid rgb(1, 117, 113);
-        border-radius: 10px;
-        font-size: 1.5rem;
-    }
+    // width: 90%;
+    // margin: 50px auto;
+    padding-bottom: 50px;
+    margin-top: 20%;
+    // text-align: center;
+    border-bottom: 3px solid rgb(1, 117, 113);
+    // .genreFilterBtn{
+    //     width: 175px;
+    //     height: 40px;
+    //     background-color: rgb(1, 117, 113);
+    //     margin: 0 auto;
+    //     color: antiquewhite;
+    //     font-size: 1.5rem;
+    //     border-radius: 10px;
+    //     border: none;
+    // }
+    
 }
-.previousBtn{
-    width: 160px;
-    height: 55px;
+.pages{
+    display: flex;
+    padding: 5px 20px;
+    .nextPreviousBtn{
+        width: 175px;
+    height: 60px;
     background-color: rgb(1, 117, 113);
     margin: 0 auto;
     color: antiquewhite;
-    font-size: 1.5rem;
-    border-radius: 10px;
-}
-.nextBtn{
-    width: 160px;
-    height: 55px;
-    background-color: rgb(1, 117, 113);
-    margin: 0 auto;
-    color: antiquewhite;
-    font-size: 1.5rem;
-    border-radius: 10px;
-}
-.previousBtn:disabled {
-    background-color: rgba(0, 56, 53, 0.397);
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+        margin: 0px 50px;
+    }
+    .nextPreviousBtn:disabled {
+        background-color: rgba(43, 77, 0, 0.514);
+    }
 }
 
+@media (max-width: 850px){
+    .pages .nextPreviousBtn {
+        margin: 0% 1%;
+        width: 35vw;
+        }
+}
+
+@media (max-width: 800px){
+    .inputDiv {
+        margin-top: 29%;
+    }
+}
+
+    @media (max-width: 650px){
+        .inputDiv {
+            margin-top: 45%;
+        }
+
+        .inputBooksPage {
+            margin-left: 50%;
+            transform: translateX(-50%);
+            width: 85%;
+        }
+        .zoekFilterBtn{
+            width: 155px;
+            height: 40px;
+            background-color: rgb(1, 117, 113);
+            color: antiquewhite;
+            font-size: 2rem;
+            border-radius: 5px;
+            border: none;
+            margin-left: 50%;
+            margin-top: 5%;
+            transform: translateX(-50%);
+        }
+    }
+
+    
+    @media (max-width: 572px){
+        .pages .nextPreviousBtn {
+        margin: 0% 1%;
+        width: 35vw;
+        }
+    }
