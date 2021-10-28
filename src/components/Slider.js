@@ -73,6 +73,8 @@ const Slider = ({ data }) => {
                     language={slide.taal}
                     series={slide.series}
                     description={slide.beschrijving}
+                    publishYear={slide.uitgave_jaar}
+                    topicalSubjects={slide.topical_subjects}
                     />
               </div>
             );
