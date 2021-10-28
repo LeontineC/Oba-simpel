@@ -936,14 +936,14 @@ button {
 }
 
 .textMaatje {
-  margin: 20% auto 20% auto;
+  margin: 0 20%;
   text-align: center;
-  padding: 0 10%;
 }
 
 .textMaatje .imgMaatje {
   width: 40vw;
   margin-bottom: 5%;
+  border-radius: 5px;
 }
 
 .textMaatje h1 {
@@ -986,6 +986,9 @@ button {
 }
 
 @media screen and (max-width: 450px) {
+  .textMaatje {
+    margin: 10%;
+  }
   .textMaatje .imgMaatje {
     width: 90vw;
   }
@@ -1007,13 +1010,15 @@ button {
 }
 
 .textEBooks {
-  margin: 0 15%;
+  margin: 0 20%;
   text-align: center;
+  overflow-x: hidden;
 }
 
 .textEBooks .imgEBooks {
-  width: 40%;
+  width: 40vw;
   margin-bottom: 5%;
+  border-radius: 5px;
 }
 
 .textEBooks h1 {
@@ -1031,11 +1036,12 @@ button {
 .textEBooks a {
   -webkit-text-decoration: underline #009b96;
           text-decoration: underline #009b96;
+  color: teal;
 }
 
 .textEBooks a:hover {
-  -webkit-text-decoration: underline #009b96;
-          text-decoration: underline #009b96;
+  -webkit-text-decoration: underline #009b96 dashed;
+          text-decoration: underline #009b96 dashed;
 }
 
 .instructionsEBooks {
@@ -1102,26 +1108,30 @@ button {
 }
 
 @media screen and (max-width: 450px) {
+  .textEBooks {
+    margin: 2%;
+  }
   .textEBooks .imgEBooks {
     width: 90vw;
   }
 }
 
 .passendLezen {
-  margin: 20% auto 20% auto;
+  margin: 20% auto 30% auto;
   width: 100vw;
-  height: 120vh;
+  height: 160vh;
 }
 
 .textPassend {
-  margin: 20% auto 20% auto;
+  margin: 0 20%;
   text-align: center;
-  padding: 0 10%;
+  overflow-x: hidden;
 }
 
 .textPassend .imgPassend {
   width: 40vw;
   margin-bottom: 5%;
+  border-radius: 5px;
 }
 
 .textPassend h1 {
@@ -1139,6 +1149,7 @@ button {
 .textPassend a {
   -webkit-text-decoration: underline #009b96;
           text-decoration: underline #009b96;
+  color: #009b96;
 }
 
 .textPassend a:hover {
@@ -1154,17 +1165,20 @@ button {
 
 @media screen and (max-width: 800px) {
   .passendLezen {
-    margin-top: 20%;
+    margin-top: 30%;
   }
 }
 
 @media screen and (max-width: 650px) {
   .passendLezen {
-    margin-top: 60%;
+    margin-top: 40%;
   }
 }
 
 @media screen and (max-width: 450px) {
+  .textPassend {
+    margin: 10%;
+  }
   .textPassend .imgPassend {
     width: 90vw;
   }

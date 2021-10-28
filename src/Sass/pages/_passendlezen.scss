@@ -1,54 +1,59 @@
 .passendLezen {
-    margin: 20% auto 20% auto;
-    width: 100vw;
-    height: 120vh;
+  margin: 20% auto 30% auto;
+  width: 100vw;
+  height: 160vh;
 }
 
 .textPassend {
-    margin: 20% auto 20% auto;
-    text-align: center;
-    padding: 0 10%;
-    .imgPassend {
-        width: 40vw;
-        margin-bottom: 5%;
-    }
-    h1 {
-        margin-bottom: 5%;
-    }
-    h2 {
-        margin-bottom: 3%;
-    }
-    p {
-        margin-bottom: 3%;
-    }
-    a {
-        text-decoration: underline $primary-color;
-    }
-    a:hover {
-        text-decoration: underline $primary-color dashed;
-    }
+  margin: 0 20%;
+  text-align: center;
+  overflow-x: hidden;
+  .imgPassend {
+    width: 40vw;
+    margin-bottom: 5%;
+    border-radius: 5px;
+  }
+  h1 {
+    margin-bottom: 5%;
+  }
+  h2 {
+    margin-bottom: 3%;
+  }
+  p {
+    margin-bottom: 3%;
+  }
+  a {
+    text-decoration: underline $primary-color;
+    color: $primary-color;
+  }
+  a:hover {
+    text-decoration: underline $primary-color dashed;
+  }
 }
 
 @media screen and (max-width: 900px) {
-    .textPassend .imgPassend {
-        width: 50vw;
-    }
+  .textPassend .imgPassend {
+    width: 50vw;
+  }
 }
 
 @media screen and (max-width: 800px) {
-    .passendLezen {
-        margin-top: 20%;
-    }
+  .passendLezen {
+    margin-top: 30%;
+}
 }
 
 @media screen and (max-width: 650px) {
-    .passendLezen {
-        margin-top: 60%;
-    }
+  .passendLezen {
+    margin-top: 40%;
+  }
 }
 
 @media screen and (max-width: 450px) {
-    .textPassend .imgPassend {
-        width: 90vw;
+    .textPassend {
+        margin: 10%;
     }
+  .textPassend .imgPassend {
+    width: 90vw;
+  }
 }

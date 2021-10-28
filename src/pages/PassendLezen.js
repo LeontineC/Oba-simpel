@@ -7,7 +7,7 @@ const PassendLezen = () => {
   return (
     <div
       className="passendLezen"
-      style={{ fontSize: `${fontSize}px`, marginTop: "30vw" }}
+      style={{ fontSize: `${fontSize}px` }}
     >
       <div className="textPassend">
         <h1>Passend Lezen</h1>

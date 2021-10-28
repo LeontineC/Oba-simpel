@@ -36,12 +36,11 @@ const EbooksLuisterBoeken = () => {
               <RiNumber1 style={{ fontSize: "30px", margin: "10%", color: "teal" }} />
               <h3 style={{ margin: "5%" }}>Download de app</h3>{" "}
               <p>
-                Ga naar de
-                <a href="https://apps.apple.com/us/app/id1517985604">
-                  App Store{" "}
+                Ga naar de  <a href="https://apps.apple.com/us/app/id1517985604" style={{color: "teal"}}>
+                   App Store{" "} 
                 </a>{" "}
                 of{" "}
-                <a href="https://play.google.com/store/apps/details?id=com.odilo.bibliotheek">
+                <a href="https://play.google.com/store/apps/details?id=com.odilo.bibliotheek" style={{color: "teal"}}>
                   Google play{" "}
                 </a>{" "}
                 en zoek naar de online Bibliotheek app.

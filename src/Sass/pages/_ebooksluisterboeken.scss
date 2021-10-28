@@ -8,11 +8,13 @@
 }
 
 .textEBooks {
-  margin: 0 15%;
+  margin: 0 20%;
   text-align: center;
+  overflow-x: hidden;
   .imgEBooks {
-    width: 40%;
+    width: 40vw;
     margin-bottom: 5%;
+    border-radius: 5px;
   }
   h1 {
     margin-bottom: 5%;
@@ -25,9 +27,10 @@
   }
   a {
     text-decoration: underline $primary-color;
+    color: teal;
   }
   a:hover {
-    text-decoration: underline $primary-color;
+    text-decoration: underline $primary-color dashed;
   }
 }
 
@@ -76,6 +79,9 @@
 }
 
 @media screen and (max-width: 450px) {
+  .textEBooks {
+    margin: 2%;
+  }
   .textEBooks .imgEBooks {
     width: 90vw;
   }

@@ -16,6 +16,8 @@ const Navbar = () => {
 
   const handleClick = () => setShowMenu(!showMenu);
 
+  const style = {}
+
   return (
     <>
       <nav className="navbar">
@@ -92,8 +94,8 @@ const Navbar = () => {
               </button>
             </li>
             <li className="btnsRight">
-              <a href="https://www.oba.nl/" style={{color: "teal"}}>
-                <ExitToAppIcon style={{ fontSize: "2vw", fontFamily: "'Poppins', sanSerif" }} />
+              <a href="https://www.oba.nl/" style={{color: "$primary-color"}}>
+                <ExitToAppIcon style={{ fontSize: "2vw", fontFamily: "'Poppins', sanSerif", color: "$primary-color" }} />
                 naar OBA.nl
               </a>
             </li>
