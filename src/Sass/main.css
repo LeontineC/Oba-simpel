@@ -1181,6 +1181,7 @@ button {
      object-fit: fill;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top: 0vh;
 }
 
 .modal .modal_display .modal_details {
@@ -1291,10 +1292,10 @@ a:hover {
   cursor: pointer;
 }
 
-.modal_image {
+.modal_image_act {
   height: 12vw !important;
   width: 15vw !important;
-  margin-top: 10vh;
+  margin-top: 10vh !important;
 }
 
 .activity_modal {

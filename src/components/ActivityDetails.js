@@ -27,7 +27,7 @@ const ActivityDetails = ({ location, tijd, datum, open, children, onClose, title
 
                 <div className="modal_display">
                     <div>
-                        <img className="modal_image" src={omslagafbeeldingen} alt={"cover picture of " + title} />
+                        <img className="modal_image_act" src={omslagafbeeldingen} alt={"cover picture of " + title} />
                     </div>
                     <div className="modal_details activity_modal">
                         <p><span>{description}</span></p>
