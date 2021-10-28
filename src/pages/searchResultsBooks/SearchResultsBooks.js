@@ -82,22 +82,20 @@ const Boeken = () => {
             {booksList && booksList && <GenreBookFilter books={booksList} searchValue={searchValue} setSearchValue={setSearchValue} ad={ad} setAd={setAd} genreName={genreName} setGenreName={setGenreName} filteredBooks={filteredBooks} setFilteredBooks={setFilteredBooks} />}
 
 
-            <section className="search_results">
+            <section >
                 {loading === false ?
-                    <div>
+                    <div >
                         {filteredBooks && filteredBooks.length > 0 ?
-                            <div className="result_card">
+                            <div className="search_results">
                                 
-
-
                                 {filteredBooks && filteredBooks.map(({ id, title, omslagafbeeldingen, auteurs, uitgever, taal, series, beschrijving, uitgave_jaar, topical_subjects }) => (
                                     <Book key={id}
                                         title={title}
                                         omslagafbeeldingen={omslagafbeeldingen[1]}
-                                        author={auteurs}
+                                        autho                                        language={taal}
+                                        series={series}r={auteurs}
                                         publisher={uitgever}
-                                        language={taal}
-                                        series={series}
+
                                         description={beschrijving}
                                         publishYear={uitgave_jaar}
                                         topicalSubjects={topical_subjects}
@@ -108,7 +106,7 @@ const Boeken = () => {
                                     <button className="nextPreviousBtn" disabled={pageNumb == 1 ? true : false} onClick={previousPage}>vorige pagina</button><h2>{booksList.length == 0 ? <h2>Geen Resultaten</h2> : null}</h2><button disabled={count > pageNumb ? true : false} className="nextPreviousBtn" onClick={nextPage}>volgende pagina</button></div> : null}
                             </div>
                             :
-                            <div className="result_card">
+                            <div className="search_results">
                                 
 
 
