@@ -367,7 +367,6 @@ button {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
-  border: lime solid 1px;
 }
 
 .slide {
@@ -382,7 +381,6 @@ button {
 .sliderImages {
   height: 80%;
   width: 90%;
-  border: pink 2px solid;
 }
 
 .sliderImage {
@@ -468,10 +466,10 @@ button {
     width: 60%;
   }
   .arrowBtnLeft {
-    left: 16%;
+    left: 17%;
   }
   .arrowBtnRight {
-    left: 84%;
+    left: 82%;
   }
 }
 
@@ -615,12 +613,12 @@ button {
 
 @media screen and (max-width: 650px) {
   .sliderImageActiviteiten {
-    width: 70vw;
-    margin: 0 2.5vw;
+    width: 50vw;
+    margin: 0 12vw;
   }
   .overlayActiviteiten {
-    width: 91.5%;
-    left: 4.5%;
+    width: 66%;
+    left: 17%;
     top: 33.5%;
   }
 }

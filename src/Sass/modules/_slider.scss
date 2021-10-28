@@ -15,7 +15,6 @@
     display: flex;
     align-items: center;
     overflow: hidden;
-    border: lime solid 1px;
 }
 
 .slide {
@@ -27,7 +26,6 @@
 .sliderImages {
     height: 80%;
     width: 90%;
-    border: pink 2px solid;
 }
 
 .sliderImage {
@@ -104,10 +102,10 @@
         width: 60%;
     }
     .arrowBtnLeft {
-        left: 16%; 
+        left: 17%; 
     }
     .arrowBtnRight {
-        left: 84%;
+        left: 82%;
     }
 }
 
