@@ -3,7 +3,7 @@ import ReactDom from "react-dom"
 import { FaWindowClose } from "react-icons/fa"
 
 
-const ActivityDetails = ({ location, tijd, datum, open, children, onClose, title, author, omslagafbeeldingen, publisher, language, series, description }) => {
+const ActivityDetails = ({ location, tijd, datum, open, children, onClose, title, omslagafbeeldingen, description }) => {
 
 
     if (!open) return null

@@ -1,4 +1,5 @@
 import React from "react";
+import ActivityOnPage from "./ActivityOnPage";
 
 
 
@@ -22,29 +23,16 @@ function ActivitiesLoop({ activities }) {
                   day.toLocaleString("nl", { month: "short" });
                 return (
                   <>
-                    <div
-                      className="ActCal"
-                      key={activity.id}
-                      style={{
-                        backgroundImage: "url('images/activityicon_green.svg')",
-                        backgroundPosition: "cover",
-                        backgroundRepeat: "no-repeat",
-                        height: "100%"
-                      }}
-                    >
-                      
-                      <div className="ActInfo">
-                        <h3>{activity.title}</h3>
-                        <h4>{activity.tijd}</h4>
-                        <h4>{dayFormat}</h4>
-                        {/* </div> */}
-                        {/* <div className="ActImg" > */}
-                        <img
-                          src={activity.omslagafbeeldingen[0]}
-                          alt={activity.title}
-                        ></img>
-                      </div>
-                    </div>
+<ActivityOnPage 
+  key={activity.id}
+  omslagafbeeldingen={activity.omslagafbeeldingen[0]}
+  tijd={activity.tijd}
+  title={activity.title}
+  dayFormat={dayFormat}
+  datum={activity.datum}
+  description={activity.beschrijving}
+  location={activity.locatie}
+/>
                   </>
                 );
               })}

@@ -823,7 +823,8 @@ button {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 22%;
-  font-size: 1.2rem;
+  margin-bottom: 7%;
+  padding-bottom: 10%;
 }
 
 .ActInfo h3,
@@ -838,7 +839,7 @@ button {
 .ActInfo img {
   width: 70%;
   height: 60%;
-  padding-top: 6%;
+  padding: 6%;
 }
 
 .randomActCal {
