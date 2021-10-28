@@ -1,6 +1,11 @@
 import React from "react";
 
+
+
 function ActivitiesLoop({ activities }) {
+
+ 
+
   return (
     <div>
       <div>
@@ -8,6 +13,13 @@ function ActivitiesLoop({ activities }) {
           <div className="mainActCal">
             {activities &&
               activities.map((activity) => {
+                const day = new Date(activity.datum);
+                const dayFormat =
+                  day.toLocaleString("nl", { weekday: "short" }) +
+                  " " +
+                  day.getDate() +
+                  " " +
+                  day.toLocaleString("nl", { month: "short" });
                 return (
                   <>
                     <div
@@ -20,10 +32,11 @@ function ActivitiesLoop({ activities }) {
                         height: "100%"
                       }}
                     >
+                      
                       <div className="ActInfo">
                         <h3>{activity.title}</h3>
                         <h4>{activity.tijd}</h4>
-                        <h4>{activity.datum}</h4>
+                        <h4>{dayFormat}</h4>
                         {/* </div> */}
                         {/* <div className="ActImg" > */}
                         <img
