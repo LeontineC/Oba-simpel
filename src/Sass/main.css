@@ -427,7 +427,7 @@ button {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  left: 90%;
+  left: 91%;
   color: #009b96;
   z-index: 9;
   cursor: pointer;
