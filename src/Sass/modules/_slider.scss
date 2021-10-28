@@ -1,119 +1,124 @@
 .slider {
-    position: relative;
-    height: 70vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+  position: relative;
+  height: 70vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .wrapper {
-    position: relative;
-    width: 76%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
+  position: relative;
+  width: 76%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
 
 .slide {
-    position: absolute;
-    left: 0;
-    transition: transform .5s linear;
+  position: absolute;
+  left: 0;
+  transition: transform 0.5s linear;
 }
 
 .sliderImages {
-    height: 80%;
-    width: 90%;
+  height: 80%;
+  width: 90%;
 }
 
 .sliderImage {
-    width: 17.6vw;
-    height: 60vh;
-    margin-right: 1.5vw;
-    border: solid 4px $primary-color;
-    box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 2.6px;
-    padding: 12.5px;
-    padding-bottom: 20px;
-    background-clip: content-box; 
-    background-color: white;
-    border-radius: 2.5%;
-    text-align: center;
+  width: 17.6vw;
+  height: 60vh;
+  margin-right: 1.5vw;
+  border: solid 4px $primary-color;
+  box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 2.6px;
+  padding: 12.5px;
+  padding-bottom: 20px;
+  background-clip: content-box;
+  background-color: white;
+  border-radius: 2.5%;
+  text-align: center;
 }
 
 .sliderTitle {
-    padding-top: 5%;
-    font-size: 1.3vw;
+  padding-top: 5%;
+  font-size: 1.3vw;
 }
 
 .arrowBtnLeft {
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    left: 9%;
-    color: $primary-color;
-    z-index: 9;
-    cursor: pointer;
-    user-select: none;
-    border: none;
-    background: transparent;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 9%;
+  color: $primary-color;
+  z-index: 9;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+  background: transparent;
 }
 .arrowBtnRight {
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    left: 90%;
-    color: $primary-color;
-    z-index: 9;
-    cursor: pointer;
-    user-select: none;
-    border: none;
-    background: transparent;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 90%;
+  color: $primary-color;
+  z-index: 9;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+  background: transparent;
 }
 
-  
-@media screen and (max-width: 900px) {
-    .sliderImage {
-        width: 24.3vw;
-        margin: 0.5vw;
-    }
-    .arrowBtnLeft{
-        left: 8%;
-    }
-    .arrowBtnRight {
-        left: 92%;
-    }
+@media screen and (max-width: 950px) {
+  .sliderImage {
+    width: 24.3vw;
+    margin: 0.5vw;
+  }
+  .arrowBtnLeft {
+    left: 8%;
+  }
+  .arrowBtnRight {
+    left: 92%;
+  }
+  .sliderTitle {
+      font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 850px) {
-    .sliderImage {
-        width: 36vw;
-        margin: 1vw;
-    }
+  .sliderImage {
+    width: 36vw;
+    margin: 1vw;
+  }
 }
 
 @media screen and (max-width: 650px) {
-    .sliderImage {
-        width: 50vw;
-        margin: 4.5vw;
-    }
-    .wrapper {
-        width: 60%;
-    }
-    .arrowBtnLeft {
-        left: 17%; 
-    }
-    .arrowBtnRight {
-        left: 82%;
-    }
+  .sliderImage {
+    width: 50vw;
+    margin: 4.5vw;
+  }
+  .wrapper {
+    width: 60%;
+  }
+  .arrowBtnLeft {
+    left: 13%;
+  }
+  .arrowBtnRight {
+    left: 87%;
+  }
+  .sliderTitle {
+      font-size: 1.1rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    .sliderImage {
-        width: 60vw;
-    }
-    .wrapper {
-        width: 70%;
-    }
+  .sliderImage {
+    width: 60vw;
+  }
+  .wrapper {
+    width: 70%;
+  }
 }
