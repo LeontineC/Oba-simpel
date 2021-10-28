@@ -1,7 +1,9 @@
-.home {
+.Home {
+  margin-top: 17vw;
   display: flex;
-  justify-content: space-evenly;
-  margin-top: 10vw;
+  flex-direction: column;
+  // align-items: start;
+  // justify-content: space-evenly;
 }
 
 .hTwoHome {
@@ -11,3 +13,34 @@
   display: flex;
   align-items: center;
 }
+
+@media screen and (max-width: 850px) {
+  .Home {
+    margin-top: 25vw;
+  }
+  .event {
+      margin-top: 60vw;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .Home {
+    margin-top: 40vw;
+  }
+  .event {
+    margin-top: 70vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .event {
+    margin-top: 100vw;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .event {
+    margin-top: 125vw;
+  }
+}
+

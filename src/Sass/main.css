@@ -367,6 +367,7 @@ button {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
+  border: lime solid 1px;
 }
 
 .slide {
@@ -381,6 +382,7 @@ button {
 .sliderImages {
   height: 80%;
   width: 90%;
+  border: pink 2px solid;
 }
 
 .sliderImage {
@@ -408,7 +410,7 @@ button {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  left: 5%;
+  left: 9%;
   color: #009b96;
   z-index: 9;
   cursor: pointer;
@@ -425,7 +427,7 @@ button {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  right: -8%;
+  left: 90%;
   color: #009b96;
   z-index: 9;
   cursor: pointer;
@@ -435,6 +437,51 @@ button {
           user-select: none;
   border: none;
   background: transparent;
+}
+
+@media screen and (max-width: 900px) {
+  .sliderImage {
+    width: 24.3vw;
+    margin: 0.5vw;
+  }
+  .arrowBtnLeft {
+    left: 8%;
+  }
+  .arrowBtnRight {
+    left: 92%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .sliderImage {
+    width: 36vw;
+    margin: 1vw;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .sliderImage {
+    width: 50vw;
+    margin: 4.5vw;
+  }
+  .wrapper {
+    width: 60%;
+  }
+  .arrowBtnLeft {
+    left: 16%;
+  }
+  .arrowBtnRight {
+    left: 84%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .sliderImage {
+    width: 60vw;
+  }
+  .wrapper {
+    width: 70%;
+  }
 }
 
 .sliderActiviteiten {
@@ -450,6 +497,8 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .arrowLeft {
@@ -534,6 +583,7 @@ button {
   left: 2%;
   color: white;
   font-weight: bold;
+  font-size: 1.2rem;
   background-color: rgba(0, 155, 150, 0.5);
 }
 
@@ -541,6 +591,44 @@ button {
   outline: none;
   border: none;
   background: transparent;
+}
+
+@media screen and (max-width: 1200px) {
+  .sliderImageActiviteiten {
+    width: 24.5vw;
+    padding: 0;
+    margin: 0.1vw;
+  }
+  .overlayActiviteiten {
+    top: 34%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .sliderActiviteiten {
+    margin-top: 0;
+  }
+  .sliderImageActiviteiten {
+    width: 37vw;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .sliderImageActiviteiten {
+    width: 70vw;
+    margin: 0 2.5vw;
+  }
+  .overlayActiviteiten {
+    width: 91.5%;
+    left: 4.5%;
+    top: 33.5%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .overlayActiviteiten {
+    left: 5%;
+  }
 }
 
 .containerTips {
@@ -597,7 +685,7 @@ button {
   color: white;
   width: 29.6%;
   height: 30%;
-  top: 55%;
+  top: 55.5%;
 }
 
 .overlayTipsOne {
@@ -616,14 +704,103 @@ button {
   text-decoration: underline;
 }
 
-.home {
+@media screen and (max-width: 1200px) {
+  .imageTips {
+    height: 40vh;
+  }
+  .overlayTipsOne, .overlayTipsTwo, .overlayTipsThree {
+    top: 48.5%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .wrapperImagesTips {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 60vw;
+  }
+  .imageTips {
+    width: 50vw;
+    padding-bottom: 5%;
+  }
+  .overlayTipsOne {
+    width: 67%;
+    top: -13.5%;
+    left: 16.5%;
+  }
+  .overlayTipsTwo {
+    width: 67%;
+    top: 44.5%;
+    left: 16.5%;
+  }
+  .overlayTipsThree {
+    width: 67%;
+    top: 102%;
+    left: 16.5%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .wrapperImagesTips {
+    margin-top: 75vw;
+  }
+  .imageTips {
+    width: 60vw;
+  }
+  .overlayTipsOne, .overlayTipsTwo, .overlayTipsThree {
+    width: 80%;
+    left: 10%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .overlayTipsOne {
+    top: -12%;
+  }
+  .overlayTipsTwo {
+    top: 45.5%;
+  }
+  .overlayTipsThree {
+    top: 103%;
+  }
+  .wrapperImagesTips {
+    margin-top: 100vw;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .wrapperImagesTips {
+    margin-top: 125vw;
+  }
+  .imageTips {
+    width: 100%;
+  }
+  .overlayTipsOne, .overlayTipsTwo, .overlayTipsThree {
+    width: 100%;
+    left: 0;
+  }
+  .overlayTipsOne {
+    top: -11%;
+  }
+  .overlayTipsTwo {
+    top: 46.5%;
+  }
+  .overlayTipsThree {
+    top: 104%;
+  }
+}
+
+.Home {
+  margin-top: 17vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin-top: 10vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .hTwoHome {
@@ -636,6 +813,36 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 850px) {
+  .Home {
+    margin-top: 25vw;
+  }
+  .event {
+    margin-top: 60vw;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .Home {
+    margin-top: 40vw;
+  }
+  .event {
+    margin-top: 70vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .event {
+    margin-top: 100vw;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .event {
+    margin-top: 125vw;
+  }
 }
 
 .search_results {

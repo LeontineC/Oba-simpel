@@ -15,6 +15,7 @@
     display: flex;
     align-items: center;
     overflow: hidden;
+    border: lime solid 1px;
 }
 
 .slide {
@@ -26,6 +27,7 @@
 .sliderImages {
     height: 80%;
     width: 90%;
+    border: pink 2px solid;
 }
 
 .sliderImage {
@@ -51,7 +53,7 @@
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    left: 5%;
+    left: 9%;
     color: $primary-color;
     z-index: 9;
     cursor: pointer;
@@ -63,7 +65,7 @@
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    right: -8%;
+    left: 90%;
     color: $primary-color;
     z-index: 9;
     cursor: pointer;
@@ -74,3 +76,47 @@
 
 
   
+@media screen and (max-width: 900px) {
+    .sliderImage {
+        width: 24.3vw;
+        margin: 0.5vw;
+    }
+    .arrowBtnLeft{
+        left: 8%;
+    }
+    .arrowBtnRight {
+        left: 92%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .sliderImage {
+        width: 36vw;
+        margin: 1vw;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .sliderImage {
+        width: 50vw;
+        margin: 4.5vw;
+    }
+    .wrapper {
+        width: 60%;
+    }
+    .arrowBtnLeft {
+        left: 16%; 
+    }
+    .arrowBtnRight {
+        left: 84%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sliderImage {
+        width: 60vw;
+    }
+    .wrapper {
+        width: 70%;
+    }
+}

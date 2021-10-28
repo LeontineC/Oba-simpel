@@ -43,25 +43,25 @@ const Home = () => {
 
   return (
     <>
-      <div className="Home" style={{ marginTop: "20%" }}>
-      <h2 className="hTwoHome">
+      <div className="Home">
+      <h2 className="hTwoHome lightbulb" >
         <MdLightbulbOutline style={{ fontSize: "400%" }}/> Tips
       </h2>
       <Tips/>
-        <h2 className="hTwoHome">
+        <h2 className="hTwoHome event">
           <EventIcon style={{ fontSize: "400%" }} /> Activiteiten
         </h2>
-        <SliderActiviteiten data={activiteitenData.activiteiten} />
-        <h2 className="hTwoHome">
+        <SliderActiviteiten data={activiteitenData.activiteiten}/>
+        <h2 className="hTwoHome bookOne">
           <ImBooks style={{ fontSize: "400%" }} /> Grootletter boeken
         </h2>
         <Slider data={sliderData.largetype.boeken}
          />
-        <h2 className="hTwoHome">
+        <h2 className="hTwoHome bookTwo">
           <ImBooks style={{ fontSize: "400%" }} /> Audio boeken
         </h2>
         <Slider data={sliderData.audio.boeken} />
-        <h2 className="hTwoHome">
+        <h2 className="hTwoHome bookThree">
           <ImBooks style={{ fontSize: "400%" }} /> Boeken
         </h2>
         <Slider data={sliderData.book.boeken} />
