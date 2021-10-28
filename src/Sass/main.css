@@ -823,6 +823,7 @@ button {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 22%;
+  font-size: 1.2rem;
 }
 
 .ActInfo h3,
@@ -857,12 +858,12 @@ button {
 }
 
 .raActCal {
-  width: 120px;
+  width: 125px;
   height: 10vh;
   background-color: #009b96;
   margin: 0 5% 3% 5%;
   border: 3px solid #009b96;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: white;
   border-radius: 5%;
 }
