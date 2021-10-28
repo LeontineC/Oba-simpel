@@ -66,39 +66,29 @@
     margin: 20px auto;
     display: flex;
     align-items: center;
-    // flex: 1 1 auto;
     flex-wrap: wrap;
     align-items: center;
-    // button{
-    //     width: 175px;
-    //     height: 40px;
-    //     background-color: rgb(1, 117, 113);
-    //     margin: 0 auto;
-    //     color: antiquewhite;
-    //     font-size: 1.5rem;
-    // }
-    
-
 }
 .typeFilterBtn {
-    width: 175px;
-    height: 40px;
+    width: 140px;
+    height: 50px;
     background-color: rgb(1, 117, 113);
-    margin: 0 auto;
     color: antiquewhite;
     font-size: 1.2rem;
     border-radius: 5px;
     border: none;
+    margin: 1%;
+    padding: 0% 1% 0% 1%;
 }
 .genreFilterBtn {
-    width: 175px;
     height: 60px;
     background-color: rgb(1, 117, 113);
-    margin: 0 auto;
+    margin: 1%;
     color: antiquewhite;
-    font-size: 1.2rem;
+    font-size: 1rem;
     border-radius: 5px;
     border: none;
+    padding: 0% 2% 0% 2%;
     // margin: 5px;
 }
 .zoekFilterBtn{
@@ -115,7 +105,7 @@
 .inputBooksPage{
     height: 55px;
     // display: inline;
-    width: 600px;
+    width: 50vw;
     margin: 0 70px;
     border: 1px solid gray;
     background-color: rgba(196, 196, 196, 0.548);
@@ -125,8 +115,8 @@
 .inputDiv {
     // width: 90%;
     // margin: 50px auto;
-    padding-bottom: 90px;
-    margin-top: 300px;
+    padding-bottom: 50px;
+    margin-top: 20%;
     // text-align: center;
     border-bottom: 3px solid rgb(1, 117, 113);
     // .genreFilterBtn{
@@ -160,6 +150,47 @@
     }
 }
 
+@media (max-width: 850px){
+    .pages .nextPreviousBtn {
+        margin: 0% 1%;
+        width: 35vw;
+        }
+}
 
+@media (max-width: 800px){
+    .inputDiv {
+        margin-top: 29%;
+    }
+}
 
+    @media (max-width: 650px){
+        .inputDiv {
+            margin-top: 45%;
+        }
 
+        .inputBooksPage {
+            margin-left: 50%;
+            transform: translateX(-50%);
+            width: 85%;
+        }
+        .zoekFilterBtn{
+            width: 155px;
+            height: 40px;
+            background-color: rgb(1, 117, 113);
+            color: antiquewhite;
+            font-size: 2rem;
+            border-radius: 5px;
+            border: none;
+            margin-left: 50%;
+            margin-top: 5%;
+            transform: translateX(-50%);
+        }
+    }
+
+    
+    @media (max-width: 572px){
+        .pages .nextPreviousBtn {
+        margin: 0% 1%;
+        width: 35vw;
+        }
+    }
