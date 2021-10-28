@@ -367,7 +367,6 @@ button {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
-  border: lime solid 1px;
 }
 
 .slide {
@@ -382,7 +381,6 @@ button {
 .sliderImages {
   height: 80%;
   width: 90%;
-  border: pink 2px solid;
 }
 
 .sliderImage {
@@ -427,7 +425,7 @@ button {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  left: 90%;
+  left: 91%;
   color: #009b96;
   z-index: 9;
   cursor: pointer;

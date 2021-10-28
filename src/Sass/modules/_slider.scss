@@ -15,7 +15,6 @@
     display: flex;
     align-items: center;
     overflow: hidden;
-    border: lime solid 1px;
 }
 
 .slide {
@@ -27,7 +26,6 @@
 .sliderImages {
     height: 80%;
     width: 90%;
-    border: pink 2px solid;
 }
 
 .sliderImage {
@@ -65,7 +63,7 @@
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    left: 90%;
+    left: 91%;
     color: $primary-color;
     z-index: 9;
     cursor: pointer;
