@@ -40,6 +40,7 @@ const GenreBookFilter = ({ books, setFilteredBooks, setGenreName, genreName, ad,
     }
 
     return (
+        <div>
         <div className="div-genreFilterBtn">
             {ad == '' ?
                 <div>
@@ -53,9 +54,10 @@ const GenreBookFilter = ({ books, setFilteredBooks, setGenreName, genreName, ad,
                 :
                 <div>
                     <button onClick={onBack} className='genreFilterBtn' >terug</button>
-                    <button style={{backgroundColor: "red"}} className='genreFilterBtn'  disabled={true}>{ad}</button>
+                    <button style={{backgroundColor: "gray", textDecoration: "underline"}} className='genreFilterBtn'  disabled={true}>{ad.slice(0, ad.length-1)}</button>
                 </div>
                    }     
+        </div>
         </div>
     )
 

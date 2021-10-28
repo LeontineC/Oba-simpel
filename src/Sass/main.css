@@ -652,7 +652,7 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 5vw;
+  gap: 2vw;
 }
 
 .result_card h2 {
@@ -704,86 +704,88 @@ button {
 
 .div-genreFilterBtn {
   width: 90%;
-  margin: 250px auto;
+  margin: 20px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  align-items: center;
 }
 
-.div-genreFilterBtn button {
-  width: 160px;
-  height: 65px;
-  background-color: #017571;
-  margin: 0 auto;
-  color: antiquewhite;
-  font-size: 1.5rem;
-}
-
-.genreFilterBtn {
-  width: 160px;
-  height: 55px;
+.typeFilterBtn {
+  width: 175px;
+  height: 40px;
   background-color: #017571;
   margin: 0 auto;
   color: antiquewhite;
   font-size: 1.2rem;
-  border-radius: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.genreFilterBtn {
+  width: 175px;
+  height: 60px;
+  background-color: #017571;
+  margin: 0 auto;
+  color: antiquewhite;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.zoekFilterBtn {
+  width: 155px;
+  height: 40px;
+  background-color: #017571;
+  margin: 0 auto;
+  color: antiquewhite;
+  font-size: 2rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.inputBooksPage {
+  height: 55px;
+  width: 600px;
+  margin: 0 70px;
+  border: 1px solid gray;
+  background-color: rgba(196, 196, 196, 0.548);
+  border-radius: 50px;
+  font-size: 1.5rem;
 }
 
 .inputDiv {
-  width: 90%;
-  margin: -200px auto;
-  text-align: center;
+  padding-bottom: 90px;
+  margin-top: 300px;
+  border-bottom: 3px solid #017571;
 }
 
-.inputDiv .genreFilterBtn {
-  width: 160px;
-  height: 55px;
+.pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px 20px;
+}
+
+.pages .nextPreviousBtn {
+  width: 175px;
+  height: 60px;
   background-color: #017571;
   margin: 0 auto;
   color: antiquewhite;
-  font-size: 1.5rem;
-  border-radius: 10px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: none;
+  margin: 0px 50px;
 }
 
-.inputDiv input {
-  height: 55px;
-  width: 600px;
-  margin: 0 auto;
-  border: 5px solid #017571;
-  border-radius: 10px;
-  font-size: 1.5rem;
-}
-
-.previousBtn {
-  width: 160px;
-  height: 55px;
-  background-color: #017571;
-  margin: 0 auto;
-  color: antiquewhite;
-  font-size: 1.5rem;
-  border-radius: 10px;
-}
-
-.nextBtn {
-  width: 160px;
-  height: 55px;
-  background-color: #017571;
-  margin: 0 auto;
-  color: antiquewhite;
-  font-size: 1.5rem;
-  border-radius: 10px;
-}
-
-.previousBtn:disabled {
-  background-color: rgba(0, 56, 53, 0.397);
+.pages .nextPreviousBtn:disabled {
+  background-color: rgba(43, 77, 0, 0.514);
 }
 
 .mainActCal {

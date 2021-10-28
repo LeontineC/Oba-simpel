@@ -7,14 +7,14 @@
     flex-wrap:wrap;
     max-width: 100vw;
     justify-content: center;
-    gap: 5vw;
+    gap: 2vw;
     h2 {
         color: rgb(0, 155, 150);
         margin: 0 auto;
     }
     div {
         button {
-            width: 160px;
+        width: 160px;
         height: 65px;
         background-color: rgb(1, 117, 113);
         margin: 0 auto;
@@ -58,73 +58,101 @@
 }
 .div-genreFilterBtn{
     width: 90%;
-    margin: 250px auto;
+    margin: 20px auto;
     display: flex;
     align-items: center;
-    flex: 1 1 auto;
+    // flex: 1 1 auto;
     flex-wrap: wrap;
-    button{
-        width: 160px;
-        height: 65px;
-        background-color: rgb(1, 117, 113);
-        margin: 0 auto;
-        color: antiquewhite;
-        font-size: 1.5rem;
-    }
+    align-items: center;
+    // button{
+    //     width: 175px;
+    //     height: 40px;
+    //     background-color: rgb(1, 117, 113);
+    //     margin: 0 auto;
+    //     color: antiquewhite;
+    //     font-size: 1.5rem;
+    // }
     
 
 }
+.typeFilterBtn {
+    width: 175px;
+    height: 40px;
+    background-color: rgb(1, 117, 113);
+    margin: 0 auto;
+    color: antiquewhite;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+}
 .genreFilterBtn {
-    width: 160px;
-        height: 55px;
-        background-color: rgb(1, 117, 113);
-        margin: 0 auto;
-        color: antiquewhite;
-        font-size: 1.2rem;
-        border-radius: 10px;
+    width: 175px;
+    height: 60px;
+    background-color: rgb(1, 117, 113);
+    margin: 0 auto;
+    color: antiquewhite;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    // margin: 5px;
+}
+.zoekFilterBtn{
+    width: 155px;
+    height: 40px;
+    background-color: rgb(1, 117, 113);
+    margin: 0 auto;
+    color: antiquewhite;
+    font-size: 2rem;
+    border-radius: 5px;
+    border: none;
+    // margin: 5px 5px;
+}
+.inputBooksPage{
+    height: 55px;
+    // display: inline;
+    width: 600px;
+    margin: 0 70px;
+    border: 1px solid gray;
+    background-color: rgba(196, 196, 196, 0.548);
+    border-radius: 50px;
+    font-size: 1.5rem;
 }
 .inputDiv {
-    width: 90%;
-    margin: -200px auto;
-    text-align: center;
-    .genreFilterBtn{
-        width: 160px;
-        height: 55px;
-        background-color: rgb(1, 117, 113);
-        margin: 0 auto;
-        color: antiquewhite;
-        font-size: 1.5rem;
-        border-radius: 10px;
-    }
-    input{
-        height: 55px;
-        // display: inline;
-        width: 600px;
-        margin: 0 auto;
-        border: 5px solid rgb(1, 117, 113);
-        border-radius: 10px;
-        font-size: 1.5rem;
-    }
+    // width: 90%;
+    // margin: 50px auto;
+    padding-bottom: 90px;
+    margin-top: 300px;
+    // text-align: center;
+    border-bottom: 3px solid rgb(1, 117, 113);
+    // .genreFilterBtn{
+    //     width: 175px;
+    //     height: 40px;
+    //     background-color: rgb(1, 117, 113);
+    //     margin: 0 auto;
+    //     color: antiquewhite;
+    //     font-size: 1.5rem;
+    //     border-radius: 10px;
+    //     border: none;
+    // }
+    
 }
-.previousBtn{
-    width: 160px;
-    height: 55px;
+.pages{
+    display: flex;
+    padding: 5px 20px;
+    .nextPreviousBtn{
+        width: 175px;
+    height: 60px;
     background-color: rgb(1, 117, 113);
     margin: 0 auto;
     color: antiquewhite;
-    font-size: 1.5rem;
-    border-radius: 10px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+        margin: 0px 50px;
+    }
+    .nextPreviousBtn:disabled {
+        background-color: rgba(43, 77, 0, 0.514);
+    }
 }
-.nextBtn{
-    width: 160px;
-    height: 55px;
-    background-color: rgb(1, 117, 113);
-    margin: 0 auto;
-    color: antiquewhite;
-    font-size: 1.5rem;
-    border-radius: 10px;
-}
-.previousBtn:disabled {
-    background-color: rgba(0, 56, 53, 0.397);
-}
+
 
