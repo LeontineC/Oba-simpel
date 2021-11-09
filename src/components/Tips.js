@@ -24,7 +24,7 @@ const Tips = () => {
         <Link to="/passendlezen">
           <img
             className="imageTips"
-            src="./passendLezen.jpeg"
+            src="https://www.oba.nl/dam/nieuws/0420_collectie-passend-lezen-vrouw-koptelefoon-.jpg.rendition.384.614.jpeg"
             alt="vrouw met koptelefoon kijkt met glimlach voor zich uit op een fluwelen fauteuil"
           />
           <h2 className="overlayTipsThree">Passend Lezen</h2>
