@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Oba-simpel/static/css/main.cf391156.chunk.css",
-    "main.js": "/Oba-simpel/static/js/main.6dcd503c.chunk.js",
-    "main.js.map": "/Oba-simpel/static/js/main.6dcd503c.chunk.js.map",
+    "main.js": "/Oba-simpel/static/js/main.f17e1cfb.chunk.js",
+    "main.js.map": "/Oba-simpel/static/js/main.f17e1cfb.chunk.js.map",
     "runtime-main.js": "/Oba-simpel/static/js/runtime-main.e30efaee.js",
     "runtime-main.js.map": "/Oba-simpel/static/js/runtime-main.e30efaee.js.map",
     "static/js/2.5adaf222.chunk.js": "/Oba-simpel/static/js/2.5adaf222.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.e30efaee.js",
     "static/js/2.5adaf222.chunk.js",
     "static/css/main.cf391156.chunk.css",
-    "static/js/main.6dcd503c.chunk.js"
+    "static/js/main.f17e1cfb.chunk.js"
   ]
 }
