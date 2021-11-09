@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import { FontProvider } from "./components/FontContext";
 import "./Sass/main.css";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import SearchResultsBooks from './pages/searchResultsBooks/SearchResultsBooks'
 import Activiteiten from "./pages/Activiteiten";
 import Boeken from "./pages/Boeken";
@@ -20,7 +20,7 @@ const App = () => {
 
     <>
       <FontProvider>
-        <Router>
+        <HashRouter basename="/">
           <div className="App">
             <Navbar />
             <Switch>
@@ -33,7 +33,7 @@ const App = () => {
               <Route exact path="/ebooksluisterboeken" component={EbooksLuisterBoeken}></Route>
             </Switch>
           </div>
-        </Router>
+        </HashRouter>
       </FontProvider>
     </>
 
