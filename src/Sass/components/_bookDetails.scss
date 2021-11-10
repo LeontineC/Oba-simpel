@@ -91,3 +91,26 @@
     z-index: 1000;
 }
 
+@include breakpoint(xs) {
+    .modal {
+        padding: 10vw;
+        top: 40%;
+        height: 70vh;
+
+        h3 {
+        font-size: 6vw;
+        }
+
+        h5 {
+            font-size: 4vw;
+            }
+    }
+
+    .modal_display .modal_image {
+        img {
+            height: 70vw;
+            width: 50vw; 
+        }
+    }
+}
+
