@@ -49,7 +49,7 @@ const Slider = ({ data }) => {
 
   return (
     <>
-      <section className="slider">
+      <section className="slider" style={{overflowX: "hidden"}}>
         <button className="arrowBtnLeft">
           <ArrowLeftIcon style={{ fontSize: "200px" }} onClick={prevSlide} />
         </button>

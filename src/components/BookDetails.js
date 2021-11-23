@@ -15,7 +15,7 @@ const BookDetails = ({ open, children, onClose, title, author, omslagafbeeldinge
         <div className="modal">
         <button class="close-window"
         onClick={onClose} 
-        ><FaWindowClose class="icon"/>Sluiten </button>
+        ><FaWindowClose class="icon"/>sluiten </button>
             {children}
             <h3>{title}</h3>
             <h5>{author.slice(author.indexOf(',')+1, author.length)} {author.slice(0, author.indexOf(','))}</h5>
