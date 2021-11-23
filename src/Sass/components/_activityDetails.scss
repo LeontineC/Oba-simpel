@@ -32,3 +32,12 @@ h4, h5 {
 .italics {
     font-style: italic;
 }
+
+@include breakpoint(xs) {
+    .modal_image_act {
+        margin-top: -1vh !important;
+        margin-left: 6vw;
+        height: 40vw !important;
+        width: 50vw !important;
+    }
+}

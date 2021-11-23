@@ -7,7 +7,7 @@
     padding: 50px;
     z-index: 1000;
     height: 80vh;
-    width: 70vw;
+    width: 72vw;
     font-size: 2vw;
     max-height: 800px;
     min-width:100px;
@@ -20,7 +20,7 @@
         top: 10px;
         border: none;
         background: none;
-        font-size: 1.5vw;
+        font-size: 3vh;
 
         .icon {
             color:red;
@@ -65,10 +65,10 @@
             line-height: 1.3;
 
             p {
-                padding-bottom: 1vh;
+                padding-bottom: 1vw;
 
                 &:last-of-type{
-                    margin-top: 2vh;
+                    margin-top: 2vw;
                     text-align: justify;
                 }
 
@@ -89,5 +89,55 @@
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
+}
+
+@include breakpoint(xs) {
+    .modal {
+        padding: 5vw;
+
+        .close-window {
+            font-size: 2vh;
+
+            .icon {
+                font-size: 3vh;
+                margin-top: 0vh;
+            }
+        }
+
+        h3 {
+        font-size: 6vw;
+        margin-top: 4vh;
+        }
+
+        h5 {
+            font-size: 4vw;
+            }
+    }
+
+    .modal_display {
+
+    .modal_image {
+        img {
+            margin-top: -1vh;
+            margin-left: 6vw;
+            height: 60vw;
+            width: 50vw; 
+        }
+    } 
+
+    .modal_details {
+
+        p {
+        font-size: 1.7vh;
+        width: 62vw;
+
+        &:last-of-type {
+           margin-top: -2vh;
+        }
+    }
+}
+
+}
+
 }
 
