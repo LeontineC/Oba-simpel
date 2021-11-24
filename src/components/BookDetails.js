@@ -7,6 +7,12 @@ const BookDetails = ({ open, children, onClose, title, author, omslagafbeeldinge
 
 
     if (!open) return null
+
+    if (language =="dut") {
+        language = "Nederlands"
+    } else if (language == "eng") {
+        language = "Engels"
+    }
     
 
     return ReactDom.createPortal(
